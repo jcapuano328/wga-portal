@@ -1,0 +1,11 @@
+<% layout('layout') -%>
+
+<div id="gameIndex" ng-controller="MainCtrl">
+    <h2 class="">Games</h2>
+	<div id="gamesList" class="list-group">
+        <a href="#" class="list-group-item" ng-repeat="game in games | orderBy: 'title'"> {{game.title}} <span class="badge">{{game.publisher}}</span></a>
+	</div>
+</div>
+
+<% script("/scripts/main/controllers/main.js") -%>
+<% script("/scripts/main/app.js") -%>

@@ -1,0 +1,22 @@
+[
+    {
+    	"code": "lb",
+    	"title": "La Bataille",
+        "url": "/lb"
+	},        
+    {
+    	"code": "cwb",
+    	"title": "Civil War, Brigade",
+        "url": "/cwb"
+	},        
+    {
+    	"code": "ocs",
+    	"title": "Operational Combat Series",
+        "url": "/ocs"
+	},        
+    {
+    	"code": "scs",
+    	"title": "Standard Combat Series",
+        "url": "/scs"
+	}
+]
