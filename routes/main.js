@@ -1,20 +1,21 @@
-var gameMan = require('../lib/game-manager');
+var log = require('../lib/logger'),
+    gameMan = require('../lib/game-manager');
 
 function gamesGet(req,res,next) {
     try {
 		// fetch list of games from the db
-        console.log('Get games');
+        log.info('Get games');
 		gameMan.getGames()
         	.then(function(games) {
                 res.writeHead(200, { 'Content-Type': 'application/json' });
                 res.end(JSON.stringify(games), 'utf-8');
             })
             .fail(function(err) {
-		    	console.log(err);
+		    	log.error(err);
 			    res.render('500', {err: err});
 		    });
     } catch (ex) {
-        console.log('Error in processing REST operation: ' + ex);
+        log.error('Error in processing REST operation: ' + ex);
         return next();
     }
 }
@@ -22,26 +23,26 @@ function gamesGet(req,res,next) {
 function gameGet(req, res, next) {
     try {
         var code = req.params.code;
-        console.log('Get game ' + code);
+        log.error('Get game ' + code);
         gameMan.getGameByCode(code)
-        	.then(function(err, game) {
+        	.then(function(game) {
                 if (game) {
-                    console.log('Retrieved game');
+                    log.info('Retrieved game');
                 }
                 else {
-                    console.log('Game NOT found');
+                    log.warn('Game NOT found');
                 }
                 res.writeHead(200, { 'Content-Type': 'application/json' });
                 res.end(JSON.stringify(game), 'utf-8');
             })
             .fail(function(err) {
             
-                console.log('ERROR: ' + err);
+                log.error('ERROR: ' + err);
                 res.writeHead(500, { 'Content-Type': 'application/json' });
                 res.end(JSON.stringify({error: err}), 'utf-8');
             });
     } catch (ex) {
-        console.log('Error in processing REST operation: ' + ex);
+        log.error('Error in processing REST operation: ' + ex);
         return next();
     }
 }

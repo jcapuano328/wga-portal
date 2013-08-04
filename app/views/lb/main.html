@@ -1,0 +1,11 @@
+<% layout('layout') -%>
+
+<div class="container" ng-view>
+</div>
+
+<% include battles.html %>
+
+<% script("/scripts/lib/module.js") -%>
+<% script("/scripts/lb/controllers/main.js") -%>
+<% script("/scripts/lb/controllers/battles.js") -%>
+<% script("/scripts/lb/app.js") -%>

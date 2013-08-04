@@ -5,15 +5,12 @@ var games = [
     {
     	id: _id++,
     	name: 'Halle', 
+        publisher: 'Martial Enterprises',
         sort: 0,
         scenarios: [
         	{
 			    id: _id++,
 				name: 'Largely Historical',
-			    startDate: 'October 17, 1806',
-			    startTime: '09:00',
-			    endDate: '17 October 1806',
-			    endTime: '16:00',
 			    startYear: 1806,
 			    startMonth: 9,
 			    startDay: 17,
@@ -28,10 +25,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Before the Saale',
-			    startDate: 'October 17, 1806',
-			    startTime: '09:00',
-			    endDate: '17 October 1806',
-			    endTime: '16:00',
 			    startYear: 1806,
 			    startMonth: 9,
 			    startDay: 17,
@@ -46,10 +39,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Revision of the Engaged Forces',
-			    startDate: 'October 17, 1806',
-			    startTime: '09:00',
-			    endDate: '17 October 1806',
-			    endTime: '16:00',
 			    startYear: 1806,
 			    startMonth: 9,
 			    startDay: 17,
@@ -66,15 +55,12 @@ var games = [
     {
     	id: _id++,
     	name: 'Raszyn', 
+        publisher: 'Martial Enterprises',
         sort: 1,
         scenarios: [
         	{
 			    id: _id++,
 				name: 'Largely Historical',
-			    startDate: 'April 17, 1809',
-			    startTime: '14:00',
-			    endDate: 'April 17, 1809',
-			    endTime: '21:40',
 			    startYear: 1809,
 			    startMonth: 3,
 			    startDay: 17,
@@ -89,10 +75,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Polish Reinforcements',
-			    startDate: 'April 17, 1809',
-			    startTime: '14:00',
-			    endDate: 'April 17, 1809',
-			    endTime: '21:40',
 			    startYear: 1809,
 			    startMonth: 3,
 			    startDay: 17,
@@ -107,10 +89,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Czaikisten Pontooners',
-			    startDate: 'April 17, 1809',
-			    startTime: '14:00',
-			    endDate: 'April 17, 1809',
-			    endTime: '21:40',
 			    startYear: 1809,
 			    startMonth: 3,
 			    startDay: 17,
@@ -128,15 +106,12 @@ var games = [
     {
     	id: _id++,
     	name: 'Moeckern', 
+        publisher: 'Martial Enterprises',
         sort: 2,
         scenarios: [
         	{
 			    id: _id++,
 				name: 'Largely Historical',
-			    startDate: 'October 16, 1813',
-			    startTime: '13:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '19:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -151,10 +126,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Optional Reinforcements and French Free Deployment',
-			    startDate: 'October 16, 1813',
-			    startTime: '13:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '19:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -169,10 +140,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Cavalry Battles in Saxony',
-			    startDate: 'October 16, 1813',
-			    startTime: '13:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '17:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -187,10 +154,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'von Bluecher Vorwaerts!!!',
-			    startDate: 'October 16, 1813',
-			    startTime: '11:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '15:00',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -205,10 +168,6 @@ var games = [
         	{
 			    id: _id++,
 				name: "In the Balance...Marmont's Counter Attack",
-			    startDate: 'October 16, 1813',
-			    startTime: '17:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '23:59',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -225,15 +184,12 @@ var games = [
     {
     	id: _id++,
     	name: 'Wiederitzsch', 
+        publisher: 'Martial Enterprises',
         sort: 3,
         scenarios: [
         	{
 			    id: _id++,
 				name: 'Largely Historical',
-			    startDate: 'October 16, 1813',
-			    startTime: '16:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '19:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -248,10 +204,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Attack on Wiederitzsch',
-			    startDate: 'October 16, 1813',
-			    startTime: '16:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '19:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -266,10 +218,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Moeckern and Wiederitzsch',
-			    startDate: 'October 16, 1813',
-			    startTime: '13:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '19:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -286,15 +234,12 @@ var games = [
     {
     	id: _id++,
     	name: 'Lindenau', 
+        publisher: 'Martial Enterprises',
         sort: 4,
         scenarios: [
         	{
 			    id: _id++,
 				name: 'Largely Historical',
-			    startDate: 'October 16, 1813',
-			    startTime: '10:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '14:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -309,10 +254,6 @@ var games = [
         	{
 			    id: _id++,
 				name: "Schwarzenburg's Caution",
-			    startDate: 'October 16, 1813',
-			    startTime: '10:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '14:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -326,10 +267,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Screening Action',
-			    startDate: 'October 16, 1813',
-			    startTime: '10:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '14:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -344,10 +281,6 @@ var games = [
         	{
 			    id: _id++,
 				name: 'Napolean Breaks Out',
-			    startDate: 'October 16, 1813',
-			    startTime: '10:00',
-			    endDate: 'October 16, 1813',
-			    endTime: '16:40',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,

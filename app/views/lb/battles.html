@@ -1,0 +1,15 @@
+<script id="battlesView" type="text/ng-template">
+	<div id="battlesIndex">
+	    <h2>Battles</h2>
+		<accordion close-others="false">
+			<!--accordion-group ng-repeat="battle in game.battles | orderBy: 'sort'" heading="{{battle.name}}" ng-class="{true:'accordion-active', false:''}[isOpen]"-->
+			<accordion-group ng-repeat="battle in game.battles | orderBy: 'sort'" heading="{{battle.name}}">
+				<ul class="list-group unstyled">
+					<li class="list-group-item" ng-repeat="scenario in battle.scenarios">
+						<a id="{{scenario.id}}" href="/lb/battle/{{scenario.id}}">{{scenario.name}}<span class="badge pull-right">{{scenarioDisplayDate(scenario)}}</span></a>
+					</li>
+				</ul>
+			</accordion-group>
+		</accordion>	
+	</div>
+</script>
