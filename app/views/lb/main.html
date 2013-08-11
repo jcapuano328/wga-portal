@@ -1,11 +1,15 @@
 <% layout('layout') -%>
 
-<div class="container" ng-view>
+<div class="container-fluid" ng-view>
 </div>
 
 <% include battles.html %>
+<% include battle.html %>
 
 <% script("/scripts/lib/module.js") -%>
+<% script("/scripts/lib/services/localStorage.js") -%>
+<% script("/scripts/lb/services/lb.js") -%>
 <% script("/scripts/lb/controllers/main.js") -%>
 <% script("/scripts/lb/controllers/battles.js") -%>
+<% script("/scripts/lb/controllers/battle.js") -%>
 <% script("/scripts/lb/app.js") -%>

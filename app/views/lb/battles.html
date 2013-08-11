@@ -6,7 +6,7 @@
 			<accordion-group ng-repeat="battle in game.battles | orderBy: 'sort'" heading="{{battle.name}}">
 				<ul class="list-group unstyled">
 					<li class="list-group-item" ng-repeat="scenario in battle.scenarios">
-						<a id="{{scenario.id}}" href="/lb/battle/{{scenario.id}}">{{scenario.name}}<span class="badge pull-right">{{scenarioDisplayDate(scenario)}}</span></a>
+						<a id="{{scenario.id}}" href="/lb/battle/{{battle.id}}/{{scenario.id}}">{{scenario.name}}<span class="badge pull-right">{{scenarioDisplayDate(scenario)}}</span></a>
 					</li>
 				</ul>
 			</accordion-group>

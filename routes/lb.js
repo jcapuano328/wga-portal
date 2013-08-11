@@ -2,7 +2,7 @@ var routes = [
     {
         desc: 'LB main page',
         method: 'get',
-        route: '/lb',
+        route: '/lb*',
         render: 'views/lb/main'
     }
 ];
