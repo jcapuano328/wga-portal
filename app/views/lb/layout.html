@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.css">
       <!-- build:css styles/main.css -->
     <!--link rel="stylesheet" href="styles/bootstrap.css"-->
-    <link rel="stylesheet" href="/components/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/components/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/components/bootstrap/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/components/bootstrap/css/bootstrap-responsive.css" media="screen">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/lb.css">
     <link rel="stylesheet" href="/styles/dice.css">
@@ -43,10 +43,9 @@
 		</div>
 		<div class="navigation">
 			<nav role="navigation" id="navigation">
-				<a href="/main" id="button-games" class="btn btn-primary">Games</a>
-				<a href="#/battles" id="button-battles" class="btn btn-default">Battles</a>
-				<a href="#/setup" id="button-setup" class="btn btn-primary">Setup</a>
-				<a href="#/about" id="button-about" class="btn btn-primary">About</a>
+				<a href="/main" id="button-games" class="btn btn-medium btn-primary">Games</a>
+				<a href="/battles" id="button-battles" class="btn btn-medium btn-default">Battles</a>
+				<a href="/about" id="button-about" class="btn btn-medium btn-primary">About</a>
 			</nav>
 		</div>
 		<div style="display: none;"> 
@@ -59,9 +58,9 @@
 		</div>
 		<%-blocks.header%>
 	</header>
-	
+
     <!-- Add your site or application content here -->
-	<%-body -%>
+    <%-body -%>
 
     <footer class="footer">
         <p>La Bataille Assistant, a friendly little helper for La Bat enthusiasts by <a href="www.ica.com">ICA, Inc 2013</a>.</p>
@@ -83,6 +82,7 @@
     <script src="/components/globalize/globalize.js"></script>
     <script src="/components/globalize/globalize.cultures.js"></script>
     <script src="/components/underscore/underscore.js"></script>
+    <script src="/components/modernizr/modernizr.js"></script>
     <%-scripts%>
   </body>
 </html>

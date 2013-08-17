@@ -1,4 +1,9 @@
 /* Will be compiled down to a single stylesheet with your sass files */
+xbody {
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* -------------------------------------------
 		HEADER
 ----------------------------------------------  */
@@ -102,6 +107,11 @@ input.edit-btn-large {
     width: 425px;
 }
 
+label.edit-btn-large {
+    font-size: 17.5px;
+    padding: 11px 19px;
+}
+
 
 .well-custom-block {
     display: table;
@@ -110,10 +120,15 @@ input.edit-btn-large {
 
 .well-custom-vertical {
     display: table-cell;
-    verticala-lign: middle;
+    vertical-align: middle;
     font-size: 11px;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 /* -------------------------------------------
 		ABOUT

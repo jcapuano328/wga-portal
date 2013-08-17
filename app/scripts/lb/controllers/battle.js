@@ -4,8 +4,8 @@ ica.module('wgaPortalLbApp.controllers', [])
 	.controller('BattleCtrl', function ($routeParams, $scope, $log, game) {
     	var battlescenario = game.restore($routeParams.battleid, $routeParams.scenarioid);
         $scope.current = {
-        	battleName: battlescenario.battle.name,
-        	scenarioName: battlescenario.scenario.name,
+        	battle: battlescenario.battle,
+        	scenario: battlescenario.scenario,
         	dateTime: game.formatCurrentDateTime(battlescenario.scenario, battlescenario.saved.turn),
             phase: game.getCurrentPhase(battlescenario.saved.phase)
 		};            
