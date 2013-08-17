@@ -10,8 +10,8 @@ ica.module('wgaPortalLbApp.controllers', [])
             phase: game.getCurrentPhase(battlescenario.saved.phase)
 		};
         $scope.tabs = {
-            one: false,
-            two: true,
+            one: true,
+            two: false,
             three: false,
             four: false
         };
