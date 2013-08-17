@@ -8,7 +8,13 @@ ica.module('wgaPortalLbApp.controllers', [])
         	scenario: battlescenario.scenario,
         	dateTime: game.formatCurrentDateTime(battlescenario.scenario, battlescenario.saved.turn),
             phase: game.getCurrentPhase(battlescenario.saved.phase)
-		};            
+		};
+        $scope.tabs = {
+            one: false,
+            two: true,
+            three: false,
+            four: false
+        };
         
         $scope.changeTurn = function(c) {
         	battlescenario.saved.turn += c;

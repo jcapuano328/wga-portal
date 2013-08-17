@@ -98,6 +98,17 @@ xbody {
     */
 }
 
+.top {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.bottom {
+    width: 100%;
+    margin: 0px auto;
+    clear: both;
+}
+
 input.edit-btn-large {
     font-size: 17.5px;
     padding: 11px 19px;
