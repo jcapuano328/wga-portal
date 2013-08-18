@@ -1,4 +1,5 @@
 /* Will be compiled down to a single stylesheet with your sass files */
+
 xbody {
     width: 100%;
     margin: 0 auto;
@@ -96,17 +97,6 @@ xbody {
 	left:0;
 	overflow:auto;
     */
-}
-
-.top {
-    width: 100%;
-    margin: 0px auto;
-}
-
-.bottom {
-    width: 100%;
-    margin: 0px auto;
-    clear: both;
 }
 
 input.edit-btn-large {

@@ -22,9 +22,9 @@
 	</div>
 	
 	<div class="row-fluid" style="padding-top: 5px">
-		<div class="input-prepend">
-			<span class="add-on" style="padding-right: 35px">Results:</span>
-			<input id="inputMoraleResults" type="text" readonly="readonly" ng-model="result"/>
+		<div class="control-group input-prepend" ng-class="{success: result=='Pass', error: result=='Fail'}">
+			<span class="add-on">Results:</span>
+			<input id="inputMoraleResults" type="text" readonly="true" ng-model="result"/>
 		</div>
 	</div>
 </div>
