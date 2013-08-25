@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.css">
       <!-- build:css styles/main.css -->
     <!--link rel="stylesheet" href="styles/bootstrap.css"-->
-    <link rel="stylesheet" href="/components/bootstrap/css/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="/components/bootstrap/css/bootstrap-responsive.css" media="screen">
+    <link rel="stylesheet" href="/components/bootstrap/css/bootstrap.css" media="screen">    
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/lb.css">
     <link rel="stylesheet" href="/styles/dice.css">
+	<link rel="stylesheet" href="/components/bootstrap/css/bootstrap-responsive.css" media="screen">
     <!-- endbuild -->
     <%-stylesheets%>
   </head>
@@ -32,46 +32,62 @@
       <script src="components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-	<header class="header" ng-controller="MainCtrl">
-		<!--div class="logo">
-			</images class="logoimage" src="/images/app-icon.png" />
-		</div-->
-		<div class="title">
-			<div class="games">La Bataille</div>
-			<div style="float:left">&nbsp;</div>
-			<div class="assistant">Assistant</div>
-		</div>
-		<div class="navigation">
-			<nav role="navigation" id="navigation">
-				<a href="/main" id="button-games" class="btn btn-medium btn-primary">Games</a>
-				<a href="/battles" id="button-battles" class="btn btn-medium btn-default">Battles</a>
-				<a href="/about" id="button-about" class="btn btn-medium btn-primary">About</a>
-			</nav>
-		</div>
-		<div style="display: none;"> 
-			<div id="HTML5Audio">
-				<input id="audiofile" type="text" value="" style="display: none;"/><br />
+    <!-- Header -->
+    <div class="navbar navbar-fixed-top" ng-controller="MainCtrl">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">
+      		<span class="title1">La Bataille</span> <span class="title2">Assistant</span>
+      	</a>
+          <div class="nav-collapse collapse">
+		  	<div class="navbar-text pull-right">
+				<span ng-bind="current.battle.name"></span> - <span ng-bind="current.scenario.name"></span>
 			</div>
-			<audio id="lbAudio">
-				<span id="OldSound"></span>        
-			</audio>
+            <ul class="nav">
+              <li><a href="#" ng-click="save()">Save</a></li>
+              <li><a href="#" ng-click="reset()">Reset</a></li>
+			  <li class="divider-vertical"></li>
+              <li><a href="/main">Games</a></li>
+              <li class="active"><a href="/battles">Battles</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+	  <div style="display: none;"> 
+	  	<div id="HTML5Audio">
+			<input id="audiofile" type="text" value="" style="display: none;"/><br />
 		</div>
-		<%-blocks.header%>
-	</header>
+		<audio id="lbAudio">
+			<span id="OldSound"></span>        
+		</audio>
+	  </div>
+	  <%-blocks.header%>
+    </div>
 
-    <!-- Add your site or application content here -->
+	<!-- Content -->
     <%-body -%>
 
-    <footer class="footer">
-        <p>La Bataille Assistant, a friendly little helper for La Bat enthusiasts by <a href="www.ica.com">ICA, Inc 2013</a>.</p>
-        <%-blocks.footer%>
-    </footer>
-
+	<!--
+	<hr>
+	
+	<footer>
+		<p class="muted credit">La Bataille Assistant, a friendly little helper for La Bat enthusiasts by <a href="www.ica.com">ICA, Inc 2013</a>.</p>
+	</footer>
+	-->
+	
+	<!--
 	<div id="about" class="about" title="Game Assistants Portal">
 		<p>A friendly little helper for La Bat enthusiasts</p>
 		<br/>
 		<p><a href="http://www.ica.com">ICA, Inc 2013</a></p>
 	</div>
+	-->
 	
 	<!-- JAVASCRIPT -->
     <script src="/components/angular/angular.js"></script>

@@ -1,121 +1,140 @@
-<div id="meleeCombat" ng-controller="MeleeCtrl" class="container-fluid" style="text-align: center;">
-	<div class="row-fluid">
-		<div class="span4">
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<h3><i>Melee</i></h3>
-				</div>				
-				<div class="row-fluid input-prepend input-append">
-					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Attacker:</span>
+<div class="container-fluid" ng-controller="MeleeCtrl" >
+	<div class="row-fluid text-center">
+		<!-- Melee -->
+		<div class="span5 container-fluid">
+			<div class="row-fluid text-center">
+				<div class="span12">
+					<h4><i>Melee</i></h4>
+				</div>
+			</div>
+			<div class="row-fluid text-center">
+				<div class="span12 input-prepend input-append">
+					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Attacker:&nbsp</span>
 					<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(-1)">-</button>
 					<input class="input-small edit-btn-large" type="number" ng-model="attackerValue" ng-change="changeAttackerValue(0)"/>
 					<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(1)">+</button>
 				</div>
-				<div class="row-fluid">
+			</div>
+			<div class="row-fluid text-center" style="margin-bottom: 5px">
+				<div class="span12 text-center">
 					<button class="btn btn-large btn-default" ng-click="changeAttackerValue(unitTotal)">Add</button>
 					<button class="btn btn-large btn-default" ng-click="resetAttackerValue()">Reset</button>
 				</div>
-				
-				<div class="row-fluid input-prepend input-append" style="padding-top: 15px;">
-					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Defender:</span>
-					<button class="btn btn-large btn-primary" ng-click="changeDefenderValue(-1)">-</button>
-					<input class="input-small edit-btn-large" type="number" ng-model="defenderValue" ng-change="changeDefenderValue(0)"/>
-					<button class="btn btn-large btn-primary" ng-click="changeDefenderValue(1)">+</button>
-				</div>
-				<div class="row-fluid">
-					<button class="btn btn-large btn-default" ng-click="changeDefenderValue(unitTotal)">Add</button>
-					<button class="btn btn-large btn-default" ng-click="resetDefenderValue()">Reset</button>
-				</div>
-				
-				<div class="row-fluid input-prepend" style="padding-top: 15px;">
-					<span class="add-on">Odds:</span>
-					<select id="selectFireOdds" type="input" ng-model="selectedOdds" ng-options="o.display for o in odds" ng-change="updateResults()"></select>
+			</div>
+			<div class="row-fluid text-center">
+			    <div class="span12 input-prepend input-append">
+				    <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Defender:</span>
+				    <button class="btn btn-large btn-primary" ng-click="changeDefenderValue(-1)">-</button>
+				    <input class="input-small edit-btn-large" type="number" ng-model="defenderValue" ng-change="changeDefenderValue(0)"/>
+				    <button class="btn btn-large btn-primary" ng-click="changeDefenderValue(1)">+</button>
+			    </div>
+			</div>
+			<div class="row-fluid text-center" style="margin-bottom: 5px">
+		        <div class="span12">
+			        <button class="btn btn-large btn-default" ng-click="changeDefenderValue(unitTotal)">Add</button>
+			        <button class="btn btn-large btn-default" ng-click="resetDefenderValue()">Reset</button>
+		        </div>
+			</div>
+			<div class="row-fluid text-center" style="margin-top: 15px">
+		        <div class="span12 input-prepend">
+			        <span class="add-on">Odds:</span>
+					<select type="input" ng-model="selectedOdds" ng-options="o.display for o in odds" ng-change="updateResults()"></select>
+		        </div>
+			</div>
+			
+			<!-- Dice -->
+			<div class="row-fluid text-center">
+				<div class="span12">
+					<div class="die"ng-model="dice.die1" ng-class="die(1)" ng-click="dieIncr(1)"></div>
+					<div class="die"ng-model="dice.die2" ng-class="die(2)" ng-click="dieIncr(2)"></div>
+					<div class="die" ng-model="dice.die3" ng-class="die(3)"></div>
+					<div class="die" ng-model="dice.die4" ng-class="die(4)"></div>
+					<div class="die" ng-model="dice.die5" ng-class="die(5)"></div>
+					<button class="btn btn-large btn-danger" style="margin-left: 10px; margin-bottom: 25px" ng-click="roll()">Roll</button>
 				</div>
 			</div>
-		</div>
-		<div class="span4">
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<h3><i>Unit</i></h3>
-				</div>				
-				<div class="row-fluid input-prepend input-append">
-					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Incr:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitIncrements(-1)">-</button>
-					<input class="input-small edit-btn-large" type="number" ng-model="unitIncrements" ng-change="changeUnitIncrements(0)"/>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitIncrements(1)">+</button>
+			<!-- Results -->
+			<div class="row-fluid text-center" style="margin-top: 0px">
+				<div class="span6 input-prepend">
+					<span class="add-on" style="padding-right: 35px">Results:</span>
+					<input type="text" readonly="readonly" ng-model="result" />
 				</div>
-				
-				<div class="row-fluid input-prepend input-append">
-					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Losses:</span>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitLosses(-1)">-</button>
-					<input class="input-small edit-btn-large" type="number" ng-model="unitLosses" ng-change="changeUnitLosses(0)"/>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitLosses(1)">+</button>
-				</div>
-				
-				<div class="row-fluid input-prepend input-append">
-					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Melee:&nbsp;</span>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitMelee(-1)">-</button>
-					<input class="input-small edit-btn-large" type="number" ng-model="unitMelee" ng-change="changeUnitMelee(0)"/>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitMelee(1)">+</button>
-				</div>
-				
-				<div class="row-fluid input-prepend input-append">
-					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Lance:&nbsp;</span>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitLance(-1)">-</button>
-					<input class="input-small edit-btn-large" type="number" ng-model="unitLance" ng-change="changeUnitLance(0)"/>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitLance(1)">+</button>
-				</div>
-				
-				<div class="row-fluid input-prepend input-append">
-					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Total:&nbsp;&nbsp;</span>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitTotal(-1)">-</button>
-					<input class="input-small edit-btn-large" type="number" ng-model="unitTotal" ng-change="changeUnitTotal(0)"/>
-					<button class="btn btn-large btn-primary" ng-click="changeUnitTotal(1)">+</button>
-				</div>
-				
-			</div>
-		</div>
-		<div class="span4">
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<h3><i>Modifiers</i></h3>
-				</div>				
-				<div class="row-fluid btn-group-vertical" style="padding-left: 30%;">
-			        <button type="button" class="btn btn-large btn-primary" ng-model="unit1_3" btn-checkbox ng-change="updateUnitTotal()">x1/3&nbsp;&nbsp;</button>
-			        <button type="button" class="btn btn-large btn-primary" ng-model="unit1_2" btn-checkbox ng-change="updateUnitTotal()">x1/2&nbsp;&nbsp;</button>
-			        <button type="button" class="btn btn-large btn-primary" ng-model="unit3_2" btn-checkbox ng-change="updateUnitTotal()">x3/2&nbsp;&nbsp;</button>
-			        <button type="button" class="btn btn-large btn-primary" ng-model="unit2" btn-checkbox ng-change="updateUnitTotal()">x2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-			        <button type="button" class="btn btn-large btn-primary" ng-model="unit2ln" btn-checkbox ng-change="updateUnitTotal()">x2 Ln</button>
+				<div class="span6 input-prepend">
+					<span class="add-on">Leader Loss:</span>
+					<input type="text" readonly="readonly" ng-model="leaderLoss"/>
 				</div>
 			</div>
 			
 		</div>
-	</div>
 	
-	<div class="row-fluid">
-		<!-- Results -->
-		<div class="container-fluid">
-			<div class="row-fluid">
-				<div id="dieMeleeCombat1" class="die" ng-model="dice.die1" ng-class="die(1)" ng-click="dieIncr(1)"></div>
-				<div id="dieMeleeCombat2" class="die" ng-model="dice.die2" ng-class="die(2)" ng-click="dieIncr(2)"></div>
-				<!--div class="span1">&nbsp;</div-->
-				<div id="dieMeleeCombat3" class="die" ng-model="dice.die3" ng-class="die(3)"></div>
-				<div id="dieMeleeCombat4" class="die" ng-model="dice.die4" ng-class="die(4)"></div>
-				<div id="dieMeleeCombat5" class="die" ng-model="dice.die5" ng-class="die(5)"></div>
-				<div class="" style="padding-top: 10px">
-					<button id="btnMeleeRoll" class="btn btn-large btn-danger" ng-click="roll()">Roll</button>
-				</div>			
-			</div>
-			<div class="row-fluid" style="padding-top: 5px">
-				<div class="input-prepend">
-					<span class="add-on" style="padding-right: 35px">Results:</span>
-					<input id="inputMeleeResults" type="text" readonly="readonly" ng-model="result"/>
+		<!-- Unit/Mods -->
+		<div class="span7 container-fluid">
+			<div class="row-fluid text-center">
+				<!-- Unit -->
+				<div class="span9 container-fluid">
+					<div class="row-fluid text-center">
+						<div class="span12">
+							<h4><i>Unit</i></h4>
+						</div>
+					</div>
+					<div class="row-fluid text-center">
+				        <div class="span12 input-prepend input-append">
+					        <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Incr:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					        <button class="btn btn-large btn-primary" ng-click="changeUnitIncrements(-1)">-</button>
+					        <input class="input-small edit-btn-large" type="number" ng-model="unitIncrements" ng-change="changeUnitIncrements(0)"/>
+					        <button class="btn btn-large btn-primary" ng-click="changeUnitIncrements(1)">+</button>
+				        </div>
+					</div>
+					<div class="row-fluid text-center">
+				        <div class="span12 input-prepend input-append">
+					        <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Losses:</span>
+					        <button class="btn btn-large btn-primary" ng-click="changeUnitLosses(-1)">-</button>
+					        <input class="input-small edit-btn-large" type="number" ng-model="unitLosses" ng-change="changeUnitLosses(0)"/>
+					        <button class="btn btn-large btn-primary" ng-click="changeUnitLosses(1)">+</button>
+				        </div>
+					</div>
+					<div class="row-fluid text-center">
+		                <div class="span12 input-prepend input-append">
+			                <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Melee:&nbsp;</span>
+			                <button class="btn btn-large btn-primary" ng-click="changeUnitMelee(-1)">-</button>
+			                <input class="input-small edit-btn-large" type="number" ng-model="unitMelee" ng-change="changeUnitMelee(0)" />
+			                <button class="btn btn-large btn-primary" ng-click="changeUnitMelee(1)">+</button>
+		                </div>
+					</div>
+					<div class="row-fluid text-center">
+		                <div class="span12 input-prepend input-append">
+			                <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Lance:&nbsp;</span>
+			                <button class="btn btn-large btn-primary" ng-click="changeUnitLance(-1)">-</button>
+			                <input class="input-small edit-btn-large" type="number" ng-model="unitLance" ng-change="changeUnitLance(0)" />
+			                <button class="btn btn-large btn-primary" ng-click="changeUnitLance(1)">+</button>
+		                </div>
+					</div>
+					<div class="row-fluid text-center">
+		                <div class="span12 input-prepend input-append">
+			                <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Total:&nbsp;&nbsp;</span>
+			                <button class="btn btn-large btn-primary" ng-click="changeUnitTotal(-1)">-</button>
+			                <input class="input-small edit-btn-large" type="number" ng-model="unitTotal" ng-change="changeUnitTotal(0)" />
+			                <button class="btn btn-large btn-primary" ng-click="changeUnitTotal(1)">+</button>
+		                </div>
+					</div>
 				</div>
-			</div>
-			<div class="row-fluid" style="padding-top: 5px">
-				<div class="input-prepend">
-					<span class="add-on">Leader Loss:</span>
-					<input id="inputMeleeLeaderLoss" type="text" readonly="readonly" ng-model="leaderLoss"/>
+				
+				<!-- Modifiers -->
+				<div class="span3 container-fluid" style="margin-bottom: 5px">
+					<div class="row-fluid text-center">
+		                <div class="span12">
+			                <h4><i>Mods</i></h4>
+		                </div>
+					</div>
+					<div class="row-fluid text-center">
+		                <div class="span12">
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="unit1_3" ng-change="updateUnitTotal()">x1/3&nbsp;&nbsp;</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="unit1_2" ng-change="updateUnitTotal()">x1/2&nbsp;&nbsp;</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="unit3_2" ng-change="updateUnitTotal()">x3/2&nbsp;&nbsp;</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="unit2" ng-change="updateUnitTotal()">x2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="unit2ln" ng-change="updateUnitTotal()">x2 Ln</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

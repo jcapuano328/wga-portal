@@ -1,77 +1,84 @@
-<div id="fireCombat" ng-controller="FireCtrl" class="container" style="text-align: center;">
-	<!-- Attacker -->
-	<div class="row">																															
-		<div class="span8">
+<div class="container-fluid" ng-controller="FireCtrl">
+	<!-- Attacker/Defender -->
+	<div class="row-fluid text-center">
+		<!-- Attacker -->
+		<div class="span6">
 			<h4><i>Attacker</i></h4>
+			<div class="container-fluid">
+				<div class="row-fluid text-center">
+					<div class="span12 input-prepend input-append">
+						<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Value:</span>
+						<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(-1)">-</button>
+						<input class="input-small edit-btn-large" type="number" ng-model="attackerValue" ng-change="changeAttackerValue(0)"/>
+						<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(1)">+</button>
+					</div>
+				</div>
+				<div class="row-fluid text-center">
+					<div class="span12">
+						<div class="btn-group">
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attacker1_3" ng-change="updateAttackValue(3.0)">x1/3</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attacker1_2" ng-change="updateAttackValue(2.0)">x1/2</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attacker3_2" ng-change="updateAttackValue(1.5)">x3/2</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attackerCann" ng-change="updateResults()">Cannister</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="span5 input-prepend input-append">
-			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Value:</span>
-			<button id="btnFireValueAttackerDown" class="btn btn-large btn-primary" ng-click="changeAttackerValue(-1)">-</button>
-			<input id="inputFireValueAttacker" class="input-small edit-btn-large" type="number" ng-model="attackerValue" ng-change="changeAttackerValue(0)"/>
-			<button id="btnFireValueAttackerUp" class="btn btn-large btn-primary" ng-click="changeAttackerValue(1)">+</button>
-		</div>
-		<div class="span3">
-			<div class="btn-group">
-		        <button type="button" class="btn btn-primary" ng-model="attacker1_3" btn-checkbox ng-change="updateAttackValue(3.0)">x1/3</button>
-		        <button type="button" class="btn btn-primary" ng-model="attacker1_2" btn-checkbox ng-change="updateAttackValue(2.0)">x1/2</button>
-		        <button type="button" class="btn btn-primary" ng-model="attacker3_2" btn-checkbox ng-change="updateAttackValue(1.5)">x3/2</button>
-		        <button type="button" class="btn btn-primary" ng-model="attackerCann" btn-checkbox ng-change="updateResults()">Cannister</button>
+		
+		<!-- Defender -->
+		<div class="span6">
+			<h4><i>Defender</i></h4>
+			<div class="container-fluid">
+				<div class="row-fluid text-center">
+					<div class="span12 input-prepend input-append">
+						<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Value:</span>
+						<button class="btn btn-large btn-primary" ng-click="changeDefenderValue(-1)">-</button>
+						<input class="input-small edit-btn-large" type="number" ng-model="defenderValue" ng-change="changeDefenderValue(0)" />
+						<button class="btn btn-large btn-primary" ng-click="changeDefenderValue(1)">+</button>
+					</div>
+				</div>
+				<div class="row-fluid text-center">
+					<div class="span12 input-prepend input-append">
+						<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Incr:&nbsp;&nbsp;&nbsp;</span>
+						<button class="btn btn-large btn-primary" ng-click="changeDefenderIncrements(-1)">-</button>
+						<input class="input-small edit-btn-large" type="number" ng-model="defenderIncrements" ng-change="updateResults()"/>
+						<button class="btn btn-large btn-primary" ng-click="changeDefenderIncrements(1)">+</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- Defender -->
-	<div class="row">
-		<div class="span8">
-			<h4><i>Defender</i></h4>
-		</div>
-	</div>
-	<div class="row">
-		<div class="span8 input-prepend input-append">
-			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Value:</span>
-			<button id="btnFireValueDefenderDown" class="btn btn-large btn-primary" ng-click="changeDefenderValue(-1)">-</button>
-			<input id="inputFireValueDefender" class="input-small edit-btn-large" type="number" ng-model="defenderValue" ng-change="changeDefenderValue(0)" />
-			<button id="btnFireValueDefenderUp" class="btn btn-large btn-primary" ng-click="changeDefenderValue(1)">+</button>
-		</div>
-	</div>
-	<div class="row">
-		<div class="span8 input-prepend input-append">
-			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Incr:&nbsp;&nbsp;&nbsp;</span>
-			<button id="btnFireIncrementsDefenderDown" class="btn btn-large btn-primary" ng-click="changeDefenderIncrements(-1)">-</button>
-			<input id="inputFireIncrementsDefender" class="input-small edit-btn-large" type="number" ng-model="defenderIncrements" ng-change="updateResults()"/>
-			<button id="btnFireIncrementsDefenderUp" class="btn btn-large btn-primary" ng-click="changeDefenderIncrements(1)">+</button>
-		</div>
-	</div>
-	<div class="row">
-		<div class="span8">
+	
+	<!-- Odds -->
+	<div class="row-fluid text-center" style="margin-top: 15px">
+		<div class="span12">
 			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Odds:</span>
-			<select id="selectFireOdds" type="input" ng-model="selectedOdds" ng-options="o.display for o in odds" ng-change="updateResults()"></select>
+			<select type="input" ng-model="selectedOdds" ng-options="o.display for o in odds" ng-change="updateResults()"></select>
+		</div>
+	</div>
+	
+	<!-- Dice -->
+	<div class="row-fluid text-center" style="margin-top: 5px">
+		<div class="span12">
+			<div class="die" ng-model="dice.die1" ng-class="die(1)" ng-click="dieIncr(1)"></div>
+			<div class="die" ng-model="dice.die2" ng-class="die(2)" ng-click="dieIncr(2)"></div>
+			<div class="die" ng-model="dice.die3" ng-class="die(3)"></div>
+			<div class="die" ng-model="dice.die4" ng-class="die(4)"></div>
+			<div class="die" ng-model="dice.die5" ng-class="die(5)"></div>
+			<button class="btn btn-large btn-danger" style="margin-left: 10px; margin-bottom: 25px" ng-click="roll()">Roll</button>
 		</div>
 	</div>
 	
 	<!-- Results -->
-	<div class="row">
-		<div id="dieFireCombat1" class="span1 die" ng-model="dice.die1" ng-class="die(1)" ng-click="dieIncr(1)"></div>
-		<div id="dieFireCombat2" class="span1 die" ng-model="dice.die2" ng-class="die(2)" ng-click="dieIncr(2)"></div>
-		<!--div class="span1">&nbsp;</div-->
-		<div id="dieFireCombat3" class="span1 die" ng-model="dice.die3" ng-class="die(3)"></div>
-		<div id="dieFireCombat4" class="span1 die" ng-model="dice.die4" ng-class="die(4)"></div>
-		<div id="dieFireCombat5" class="span1 die" ng-model="dice.die5" ng-class="die(5)"></div>
-		<div class="span1" style="padding-top: 10px">
-			<button id="btnFireRoll" class="btn btn-large btn-danger" ng-click="roll()">Roll</button>
-		</div>			
-	</div>
-	<div class="row" style="padding-top: 5px">
-		<div class="span4 input-prepend">
+	<div class="row-fluid text-center" style="margin-top: 5px">
+		<div class="span6 input-prepend">
 			<span class="add-on" style="padding-right: 35px">Results:</span>
-			<input id="inputFireResults" type="text" readonly="readonly" ng-model="result"/>
+			<input type="text" readonly="readonly" ng-model="result"/>
 		</div>
-		<div class="span4 input-prepend">
+		<div class="span6 input-prepend">
 			<span class="add-on">Leader Loss:</span>
-			<input id="inputFireLeaderLoss" type="text" readonly="readonly" ng-model="leaderLoss"/>
+			<input type="text" readonly="readonly" ng-model="leaderLoss"/>
 		</div>
 	</div>
-	
 </div>

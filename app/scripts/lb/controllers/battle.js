@@ -1,7 +1,7 @@
 'use strict';
 
 ica.module('wgaPortalLbApp.controllers', [])
-	.controller('BattleCtrl', function ($routeParams, $scope, $log, game) {
+	.controller('BattleCtrl', function ($routeParams, $rootScope, $scope, $log, game) {
     	var battlescenario = game.restore($routeParams.battleid, $routeParams.scenarioid);
         $scope.current = {
         	battle: battlescenario.battle,
@@ -9,6 +9,15 @@ ica.module('wgaPortalLbApp.controllers', [])
         	dateTime: game.formatCurrentDateTime(battlescenario.scenario, battlescenario.saved.turn),
             phase: game.getCurrentPhase(battlescenario.saved.phase)
 		};
+        $rootScope.current = {
+        	battle: {
+            	name: battlescenario.battle.name
+            },
+        	scenario: {
+            	name: battlescenario.scenario.name
+            }
+            
+        }
         $scope.tabs = {
             one: true,
             two: false,

@@ -1,58 +1,37 @@
 <script id="battleView" type="text/ng-template">
-	<div class="well" style="text-align: center;">
-		<div>
-			<h3 class="pull-left">{{current.battle.name}} - {{current.scenario.name}}</h3>
-			<div class="pull-right" style="padding-right: 5px">
-				<!--
-				<span><button id="btnGameSave" class="btn btn-medium btn-info" ng-click="save()">Save</button></span> <span><button id="btnGameReset" class="btn btn-medium btn-danger" ng-click="reset()">Reset</button></span>
-				-->
-				<span><button id="btnGameSave" class="btn btn-medium btn-info" ng-click="save()">Save</button></span> <span><button id="btnGameReset" class="btn btn-medium btn-danger" ng-click="reset()">Reset</button></span>
-			</div>				
-			<div class="clearfix" />
-		</div>				
-		<div>
-			<div class="input-append input-prepend">
-				<!--
-				<button id="btnCurrentTurnDown" class="btn btn-large btn-primary" ng-click="changeTurn(-1)">-</button>
-				<input id="gameCurrentTurn" class="input-xlarge edit-btn-large" type="text" readonly="readonly" ng-model="current.dateTime"/>
-				<button id="btnCurrentTurnUp" class="btn btn-large btn-primary" ng-click="changeTurn(1)">+</button>
-				-->
-				<button id="btnCurrentTurnDown" class="btn btn-large btn-primary" ng-click="changeTurn(-1)">-</button>
-				<input id="gameCurrentTurn" class="edit-btn-large" type="text" readonly="readonly" ng-model="current.dateTime"/>
-				<button id="btnCurrentTurnUp" class="btn btn-large btn-primary" ng-click="changeTurn(1)">+</button>
-			</div>		
-		
-			<div class="input-append input-prepend"><!-- style="padding-left: 15px"-->
-				<!--
-				<button id="btnCurrentPhaseDown" class="btn btn-large btn-primary" ng-click="changePhase(-1)">-</button>
-				<input id="gameCurrentPhase" class="input-xlarge edit-btn-large" type="text" readonly="readonly" ng-model="current.phase"/>
-				<button id="btnCurrentPhaseUp" class="btn btn-large btn-primary" ng-click="changePhase(1)">+</button>
-				-->
-			
-				<button id="btnCurrentPhaseDown" class="btn btn-large btn-primary" ng-click="changePhase(-1)">-</button>
-				<input id="gameCurrentPhase" class="edit-btn-large" type="text" readonly="readonly" ng-model="current.phase"/>
-				<button id="btnCurrentPhaseUp" class="btn btn-large btn-primary" ng-click="changePhase(1)">+</button>
-			</div>		
+	<!-- Turn/Phase -->
+	<div class="row-fluid text-center">
+		<div class="span6 input-append input-prepend">
+			<button class="btn btn-large btn-primary" ng-click="changeTurn(-1)">-</button>
+			<input class="edit-btn-large" type="text" readonly="readonly" ng-model="current.dateTime"/>
+			<button class="btn btn-large btn-primary" ng-click="changeTurn(1)">+</button>
 		</div>
-	</div>
-	<div>
+		
+		<div class="span6 input-append input-prepend">
+			<button class="btn btn-large btn-primary" ng-click="changePhase(-1)">-</button>
+			<input class="edit-btn-large" type="text" readonly="readonly" ng-model="current.phase"/>
+			<button class="btn btn-large btn-primary" ng-click="changePhase(1)">+</button>
+		</div>
+    </div>
+	
+	<div class="row-fluid">
 		<tabset>
-            <tab active="tabs.one">
-                <tab-heading><h3>Fire</h3></tab-heading>
+            <tab>
+				<tab-heading><h4>Fire</h4></tab-heading>
                 <% include fireCombat.html %>
             </tab>
-            <tab active="tabs.two">
-                <tab-heading><h3>Melee</h3></tab-heading>
+            <tab>
+				<tab-heading><h4>Melee</h4></tab-heading>
                 <% include meleeCombat.html %>
             </tab>
-            <tab active="tabs.three">
-                <tab-heading><h3>Morale</h3></tab-heading>
+            <tab>
+				<tab-heading><h4>Morale</h4></tab-heading>
                 <% include morale.html %>
             </tab>
-            <tab active="tabs.four">
-                <tab-heading><h3>General</h3></tab-heading>
+            <tab>
+				<tab-heading><h4>General</h4></tab-heading>
                 <% include general.html %>
             </tab>
 		</tabset>
-	</div>
+    </div>
 </script>
