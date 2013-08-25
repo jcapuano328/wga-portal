@@ -11,8 +11,12 @@ ica.module('wgaPortalLbApp', ['wgaPortalApp.services', 'wgaPortalLbApp.controlle
       	templateUrl: 'battleView',
         controller: 'BattleCtrl'
       })
+      .when('/lb/about', {
+      	templateUrl: 'aboutView',
+        controller: 'AboutCtrl'
+      })
       .otherwise({
-        redirectTo: '/lb'
+        redirectTo: '/lb/battles'
       });
       
 	$locationProvider.html5Mode(true);

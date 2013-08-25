@@ -36,25 +36,27 @@
     <div class="navbar navbar-fixed-top" ng-controller="MainCtrl">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <a class="btn btn-navbar" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" >
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </a>
           <a class="brand" href="#">
       		<span class="title1">La Bataille</span> <span class="title2">Assistant</span>
-      	</a>
-          <div class="nav-collapse collapse">
-		  	<div class="navbar-text pull-right">
-				<span ng-bind="current.battle.name"></span> - <span ng-bind="current.scenario.name"></span>
-			</div>
+		  </a>
+		  <div class="navbar-text pull-left" ng-show="current.battle && current.scenario">
+		  	<i><span ng-bind="current.battle.name"></span> - <span ng-bind="current.scenario.name"></span></i>
+		  </div>
+		  
+          <div collapse="navCollapsed" class="nav-collapse collapse navbar-responsive-collapse">
             <ul class="nav">
-              <li><a href="#" ng-click="save()">Save</a></li>
-              <li><a href="#" ng-click="reset()">Reset</a></li>
 			  <li class="divider-vertical"></li>
-              <li><a href="/main">Games</a></li>
-              <li class="active"><a href="/battles">Battles</a></li>
-              <li><a href="/about">About</a></li>
+              <li><a href="#" ng-show="current.battle && current.scenario" ng-click="save()">Save</a></li>
+              <li><a href="#" ng-show="current.battle && current.scenario" ng-click="reset()">Reset</a></li>
+			  <li class="divider-vertical" ng-show="current.battle && current.scenario"></li>
+              <li><a href="/" target="_self">Games</a></li>
+              <li ng-class="active(1)"><a href="/lb/battles">Battles</a></li>
+              <li ng-class="active(2)"><a href="/lb/about">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -79,14 +81,6 @@
 	<footer>
 		<p class="muted credit">La Bataille Assistant, a friendly little helper for La Bat enthusiasts by <a href="www.ica.com">ICA, Inc 2013</a>.</p>
 	</footer>
-	-->
-	
-	<!--
-	<div id="about" class="about" title="Game Assistants Portal">
-		<p>A friendly little helper for La Bat enthusiasts</p>
-		<br/>
-		<p><a href="http://www.ica.com">ICA, Inc 2013</a></p>
-	</div>
 	-->
 	
 	<!-- JAVASCRIPT -->

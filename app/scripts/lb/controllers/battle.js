@@ -2,22 +2,16 @@
 
 ica.module('wgaPortalLbApp.controllers', [])
 	.controller('BattleCtrl', function ($routeParams, $rootScope, $scope, $log, game) {
+    	$log.info('Load battle controller');
+    
     	var battlescenario = game.restore($routeParams.battleid, $routeParams.scenarioid);
-        $scope.current = {
+        $rootScope.current = {
+        	game: battlescenario,
         	battle: battlescenario.battle,
         	scenario: battlescenario.scenario,
         	dateTime: game.formatCurrentDateTime(battlescenario.scenario, battlescenario.saved.turn),
             phase: game.getCurrentPhase(battlescenario.saved.phase)
 		};
-        $rootScope.current = {
-        	battle: {
-            	name: battlescenario.battle.name
-            },
-        	scenario: {
-            	name: battlescenario.scenario.name
-            }
-            
-        }
         $scope.tabs = {
             one: true,
             two: false,
@@ -26,30 +20,25 @@ ica.module('wgaPortalLbApp.controllers', [])
         };
         
         $scope.changeTurn = function(c) {
-        	battlescenario.saved.turn += c;
+        	$rootScope.current.game.saved.turn += c;
             
-            var result = game.nextTurn(battlescenario.scenario, battlescenario.saved.turn);
-            battlescenario.saved.turn = result.turn;
-            $scope.current.dateTime = result.dateTime;
+            var result = game.nextTurn($rootScope.current.game.scenario, $rootScope.current.game.saved.turn);
+            $rootScope.current.game.saved.turn = result.turn;
+            $rootScope.current.dateTime = result.dateTime;
         }
         $scope.changePhase = function(c) {
-	        battlescenario.saved.phase += c;
-            var result = game.nextPhase(battlescenario.scenario, battlescenario.saved.turn, battlescenario.saved.phase);
+	        $rootScope.current.game.saved.phase += c;
+            var result = game.nextPhase($rootScope.current.game.scenario, $rootScope.current.game.saved.turn, $rootScope.current.game.saved.phase);
             
-            battlescenario.saved.turn = result.turn;
-            battlescenario.saved.phase = result.phase;
-            $scope.current.dateTime = result.dateTime || $scope.current.dateTime;
-            $scope.current.phase = result.phaseStr;
-            
+            $rootScope.current.game.saved.turn = result.turn;
+            $rootScope.current.game.saved.phase = result.phase;
+            $rootScope.current.dateTime = result.dateTime || $rootScope.current.dateTime;
+            $rootScope.current.phase = result.phaseStr;
         }
         
-        $scope.save = function() {
-        	game.save(battlescenario);
-        }
+        $scope.$on('reset', function() {
+        	$scope.changeTurn(0);
+            $scope.changePhase(0);
+        });
         
-        $scope.reset = function() {
-        	battlescenario.saved.turn = 1;
-        	battlescenario.saved.phase = 0;
-            changePhase(0);
-        }
 	});
