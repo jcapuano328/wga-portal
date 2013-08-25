@@ -1,6 +1,6 @@
 <script id="battlesView" type="text/ng-template">
-	<div id="battlesIndex">
-	    <h2>Battles</h2>
+	<div id="battlesIndex" class="well">
+	    <h3>Battles</h3>
 		<accordion close-others="false">
 			<!--accordion-group ng-repeat="battle in game.battles | orderBy: 'sort'" heading="{{battle.name}}" ng-class="{true:'accordion-active', false:''}[isOpen]"-->
 			<accordion-group ng-repeat="battle in game.battles | orderBy: 'sort'" heading="{{battle.name}}">

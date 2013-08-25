@@ -1,5 +1,6 @@
 var express = require('express'),
 	ejs = require('ejs-locals'),
+    path = require('path'),
 	router = require('./lib/router');
  
 var app = express();
@@ -8,6 +9,7 @@ app.use(express.logger());
 // Configuration
 
 app.configure(function(){
+  app.use(express.favicon(path.join(__dirname, 'app/images/favicon.ico'))); 
   app.set('views', __dirname + '/app');
   //app.set('view engine', 'jade');
   //app.set('view engine', 'ejs');

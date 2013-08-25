@@ -1,11 +1,25 @@
 <% layout('layout') -%>
 
-<div id="gameIndex" ng-controller="MainCtrl">
-    <h2 class="">Games</h2>
-	<div id="gamesList" class="list-group">
-        <a id="{{game.id}}" href="{{game.url}}" class="list-group-item" ng-repeat="game in games | orderBy: 'title'"> {{game.title}} <span class="badge">{{game.publisher}}</span></a>
-	</div>
+<div class="container-fluid" ng-view>
 </div>
 
+<script id="gamesView" type="text/ng-template">
+	<div class="well">
+	    <h3 class="">Games</h3>
+		<div class="list-group">
+			<a id="{{game.id}}" href="{{game.url}}" class="list-group-item" ng-repeat="game in games | orderBy: 'title'" target="_self">{{game.title}}<span class="badge pull-right">{{game.publisher}}</span></a>
+		</div>
+	</div>
+</script>
+
+<script id="aboutView" type="text/ng-template">
+	<div class="well" title="Game Assistants Portal">
+      	<h2><span class="title1">Game</span> <span class="title2">Assistants</span></h2>
+		<h4>A friendly little helper for Wargaming enthusiasts by <a href="www.ica.com">ICA, Inc 2013</a>.</h4>
+	</div>
+</script>
+
+<% script("/scripts/lib/module.js") -%>
 <% script("/scripts/main/controllers/main.js") -%>
+<% script("/scripts/main/controllers/about.js") -%>
 <% script("/scripts/main/app.js") -%>

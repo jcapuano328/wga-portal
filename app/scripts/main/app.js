@@ -1,13 +1,18 @@
 'use strict';
 
-angular.module('wgaPortalApp', ['wgaPortalApp.controllers'])
-  .config(function ($routeProvider) {
+ica.module('wgaPortalApp', ['wgaPortalApp.controllers', 'ui.bootstrap'])
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/', {
-        //templateUrl: 'main.html',
+      .when('/main', {
+        templateUrl: 'gamesView',
         controller: 'MainCtrl'
       })
+      .when('/about', {
+        templateUrl: 'aboutView',
+        controller: 'AboutCtrl'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/main'
       });
+      $locationProvider.html5Mode(true);
   });
