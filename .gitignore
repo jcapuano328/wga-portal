@@ -5,4 +5,5 @@ dist
 .tmp
 .sass-cache
 app/components
+games/**/*.xml
 cwright.pst

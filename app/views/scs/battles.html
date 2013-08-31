@@ -1,0 +1,8 @@
+<script id="battlesView" type="text/ng-template">
+	<div id="battlesIndex" class="well">
+	    <h3>Battles</h3>
+		<h3 ng-repeat="battle in game.battles | orderBy: 'sort'">
+			<a id="{{battle.id}}" href="/scs/battle/{{battle.id}}">{{battle.name}}<span class="badge pull-right">{{battle.desc}}</span></a>
+		</h3>			
+	</div>
+</script>

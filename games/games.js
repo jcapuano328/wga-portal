@@ -9,7 +9,8 @@ var games = [
         publisher: 'Clash Of Arms / ME',
         url: '/lb',
         battles: require(path.join(__dirname, 'lb', 'games'))
-	})/*,
+	}),
+    /*
 	new models.Game({
     	code: 'cwb',
     	title: 'Civil War, Brigade',
@@ -24,13 +25,14 @@ var games = [
         url: '/ocs',
         battles: null//require(path.join(__dirname, 'ocs', 'games'))
 	}),        
+    */
 	new models.Game({
     	code: 'scs',
     	title: 'Standard Combat Series',
         publisher: 'The Gamers (MMP)',
         url: '/scs',
-        battles: null//require(path.join(__dirname, 'scs', 'games'))
-	})*/
+        battles: require(path.join(__dirname, 'scs', 'games'))
+	})
 ];
 
 module.exports = games;
