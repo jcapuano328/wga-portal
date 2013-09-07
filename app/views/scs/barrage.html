@@ -1,0 +1,51 @@
+<div class="container-fluid" ng-controller="BarrageCtrl">
+
+	<!-- Strength -->
+	<div class="row-fluid text-center">
+		<div class="span12">
+			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Barrage:</span>
+			<select type="input" ng-model="selectedBarrage" ng-options="b.strength for b in barrage" ng-change="updateResults()"></select>
+		</div>
+	</div>
+
+	<!-- Terrain -->
+	<div class="row-fluid text-center" style="margin-top: 15px">
+		<div class="span12">
+			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Terrain:</span>
+			<select type="input" ng-model="selectedTerrain" ng-options="t.name for t in terrain" ng-change="updateResults()"></select>
+		</div>
+	</div>
+	
+	<!-- Modifiers -->
+	<div class="row-fluid">
+		<div class="span12 well text-center">
+				<!--
+			btn-group btn-group-vertical 
+			<button ng-repeat="mod in modifiers" type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="mod.checked" ng-change="updateResults()">{{mod.name}}</button>
+				-->
+			<div ng-repeat="mod in modifiers">
+				<label class="checkbox">
+					<input type="checkbox" ng-model="mod.checked" ng-change="updateResults()">
+					{{mod.name}}
+				</label>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Dice -->
+	<div class="row-fluid text-center" style="margin-top: 5px">
+		<div class="span12">
+			<div class="die" ng-model="dice.die1" ng-class="die(1)" ng-click="dieIncr(1)"></div>
+			<div class="die" ng-model="dice.die2" ng-class="die(2)" ng-click="dieIncr(2)"></div>
+			<button class="btn btn-large btn-danger" style="margin-left: 10px; margin-bottom: 25px" ng-click="roll()">Roll</button>
+		</div>
+	</div>
+	
+	<!-- Results -->
+	<div class="row-fluid text-center" style="margin-top: 5px">
+		<div class="span6 input-prepend">
+			<span class="add-on" style="padding-right: 35px">Results:</span>
+			<input type="text" readonly="readonly" ng-model="result"/>
+		</div>
+	</div>
+</div>

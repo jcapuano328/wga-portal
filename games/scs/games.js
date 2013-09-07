@@ -1,8 +1,8 @@
 var games = [
 {
-    "id": 1,
+    "id": 101,
     "name": "Afrika",
-    "desc": "The War in Africa: 1940 - 1942",
+    "desc": "The War in Africa: 1940-1942",
     "sort": 2,
     "players": [
         "Axis",
@@ -164,6 +164,7 @@ var games = [
     "combatTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
@@ -171,33 +172,33 @@ var games = [
                 "odds": -4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A3r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "9",
+                        "lo": 5,
+                        "hi": 9,
                         "result": "A2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r2"
                     }
                 ]
@@ -206,33 +207,33 @@ var games = [
                 "odds": -3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "8",
+                        "lo": 4,
+                        "hi": 8,
                         "result": "A2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A1D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -241,33 +242,33 @@ var games = [
                 "odds": -2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "7",
+                        "lo": 3,
+                        "hi": 7,
                         "result": "A2"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "A1D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -276,43 +277,43 @@ var games = [
                 "odds": 1,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "5",
+                        "lo": 3,
+                        "hi": 5,
                         "result": "A2"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -321,38 +322,38 @@ var games = [
                 "odds": 2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A2"
                     },
                     {
-                        "lo": "5",
-                        "hi": "7",
+                        "lo": 5,
+                        "hi": 7,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r4"
                     }
                 ]
@@ -361,38 +362,38 @@ var games = [
                 "odds": 3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "6",
+                        "lo": 4,
+                        "hi": 6,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r4"
                     }
                 ]
@@ -401,43 +402,43 @@ var games = [
                 "odds": 4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2"
                     },
                     {
-                        "lo": "3",
-                        "hi": "5",
+                        "lo": 3,
+                        "hi": 5,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r4"
                     }
                 ]
@@ -446,43 +447,43 @@ var games = [
                 "odds": 5,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2D1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D4r4"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r5"
                     }
                 ]
@@ -491,43 +492,43 @@ var games = [
                 "odds": 6,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2D1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D4r4"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r5"
                     }
                 ]
@@ -536,48 +537,48 @@ var games = [
                 "odds": 7,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D4r4"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D4r5"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D5r5"
                     }
                 ]
@@ -586,48 +587,48 @@ var games = [
                 "odds": 8,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D4r4"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D4r5"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D5r5"
                     }
                 ]
@@ -636,53 +637,53 @@ var games = [
                 "odds": 9,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "D3r2"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D4r4"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D4r5"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D5r5"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D6r5"
                     }
                 ]
@@ -692,57 +693,58 @@ var games = [
             {
                 "name": "Air",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Artillery",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Div Integrity",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Comb Arms",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Leader",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Rocks/Hills",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "OOS Attack",
                 "type": "MULT",
-                "value": "0.25"
+                "value": 0.25
             },
             {
                 "name": "OOS Defend",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             }
         ]
     },
     "barrageTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
             {
-                "strength": null,
+                "strength": "NA",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "12",
+                        "lo": 2,
+                        "hi": 12,
                         "result": "NE"
                     }
                 ]
@@ -752,9 +754,9 @@ var games = [
     }
 },
 {
-    "id": 2,
+    "id": 102,
     "name": "Bastogne",
-    "desc": "Screaming Eagles under Siege: 18-27 Dec' 44",
+    "desc": "Screaming Eagles Under Siege: 18-27 Dec '44",
     "sort": 13,
     "players": [
         "US",
@@ -837,6 +839,7 @@ var games = [
     "combatTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
@@ -844,23 +847,23 @@ var games = [
                 "odds": -3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A1r2"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "11",
+                        "lo": 7,
+                        "hi": 11,
                         "result": "A1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D1"
                     }
                 ]
@@ -869,33 +872,33 @@ var games = [
                 "odds": -2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1r2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "5",
+                        "lo": 4,
+                        "hi": 5,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "8",
+                        "lo": 6,
+                        "hi": 8,
                         "result": "A1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D1r2"
                     }
                 ]
@@ -904,33 +907,33 @@ var games = [
                 "odds": 1,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1r2"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "A1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "D1r2"
                     }
                 ]
@@ -939,33 +942,33 @@ var games = [
                 "odds": 2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "5",
+                        "lo": 4,
+                        "hi": 5,
                         "result": "A1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "11",
+                        "lo": 9,
+                        "hi": 11,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D1r3"
                     }
                 ]
@@ -974,33 +977,33 @@ var games = [
                 "odds": 3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "9",
+                        "lo": 7,
+                        "hi": 9,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "D1r3"
                     }
                 ]
@@ -1009,33 +1012,33 @@ var games = [
                 "odds": 4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "8",
+                        "lo": 6,
+                        "hi": 8,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "11",
+                        "lo": 9,
+                        "hi": 11,
                         "result": "D1r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r4"
                     }
                 ]
@@ -1044,43 +1047,43 @@ var games = [
                 "odds": 5,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D1r3"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D1r4"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "D2r5"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r6"
                     }
                 ]
@@ -1090,102 +1093,103 @@ var games = [
             {
                 "name": "DG",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             }
         ]
     },
     "barrageTable": {
         "dice": {
             "number": 1,
+            "base": "d",
             "sides": 6
         },
         "table": [
             {
-                "strength": 1,
+                "strength": "1",
                 "results": [
                     {
-                        "lo": "1",
-                        "hi": "1",
+                        "lo": 1,
+                        "hi": 1,
                         "result": "DG"
                     },
                     {
-                        "lo": "2",
-                        "hi": "6",
+                        "lo": 2,
+                        "hi": 6,
                         "result": "NE"
                     }
                 ]
             },
             {
-                "strength": 2,
+                "strength": "2",
                 "results": [
                     {
-                        "lo": "1",
-                        "hi": "2",
+                        "lo": 1,
+                        "hi": 2,
                         "result": "DG"
                     },
                     {
-                        "lo": "3",
-                        "hi": "6",
+                        "lo": 3,
+                        "hi": 6,
                         "result": "NE"
                     }
                 ]
             },
             {
-                "strength": 3,
+                "strength": "3",
                 "results": [
                     {
-                        "lo": "1",
-                        "hi": "3",
+                        "lo": 1,
+                        "hi": 3,
                         "result": "DG"
                     },
                     {
-                        "lo": "4",
-                        "hi": "6",
+                        "lo": 4,
+                        "hi": 6,
                         "result": "NE"
                     }
                 ]
             },
             {
-                "strength": 4,
+                "strength": "4",
                 "results": [
                     {
-                        "lo": "1",
-                        "hi": "4",
+                        "lo": 1,
+                        "hi": 4,
                         "result": "DG"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "NE"
                     }
                 ]
             },
             {
-                "strength": 5,
+                "strength": "5",
                 "results": [
                     {
-                        "lo": "1",
-                        "hi": "5",
+                        "lo": 1,
+                        "hi": 5,
                         "result": "DG"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "NE"
                     }
                 ]
             },
             {
-                "strength": 6,
+                "strength": "6",
                 "results": [
                     {
-                        "lo": "1",
-                        "hi": "6",
+                        "lo": 1,
+                        "hi": 6,
                         "result": "DG"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "NE"
                     }
                 ]
@@ -1195,9 +1199,9 @@ var games = [
     }
 },
 {
-    "id": 3,
+    "id": 103,
     "name": "Crusader",
-    "desc": "The 8th Army's Winter Victory: Nov-Dec 1941",
+    "desc": "The 8th Army's Winter Victory, Nov-Dec 1941",
     "sort": 5,
     "players": [
         "Allied",
@@ -1209,7 +1213,7 @@ var games = [
         "Nov 23-24 1941",
         "Nov 25-26 1941",
         "Nov 27-28 1941",
-        "Nov 29-30 1941",
+        "Nov 29-20 1941",
         "Dec 1-2 1941",
         "Dec 3-4 1941",
         "Dec 5-6 1941",
@@ -1233,7 +1237,7 @@ var games = [
     ],
     "terrains": [
         {
-            "name": {},
+            "name": '',
             "barrage": {
                 "attackmod": 0,
                 "defendmod": 0
@@ -1357,6 +1361,7 @@ var games = [
     "combatTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
@@ -1364,38 +1369,38 @@ var games = [
                 "odds": -3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A3r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "A2"
                     },
                     {
-                        "lo": "7",
-                        "hi": "9",
+                        "lo": 7,
+                        "hi": 9,
                         "result": "A1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r2"
                     }
                 ]
@@ -1404,38 +1409,38 @@ var games = [
                 "odds": -2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "5",
+                        "lo": 4,
+                        "hi": 5,
                         "result": "A2"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "A1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A1D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -1444,43 +1449,43 @@ var games = [
                 "odds": 1,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "A2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A2D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "7",
+                        "lo": 5,
+                        "hi": 7,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -1489,38 +1494,38 @@ var games = [
                 "odds": 2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "6",
+                        "lo": 4,
+                        "hi": 6,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A1D2"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r4"
                     }
                 ]
@@ -1529,38 +1534,38 @@ var games = [
                 "odds": 3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2"
                     },
                     {
-                        "lo": "3",
-                        "hi": "5",
+                        "lo": 3,
+                        "hi": 5,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r4"
                     }
                 ]
@@ -1569,43 +1574,43 @@ var games = [
                 "odds": 4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r4"
                     }
                 ]
@@ -1614,43 +1619,43 @@ var games = [
                 "odds": 5,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D4r4"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r5"
                     }
                 ]
@@ -1660,202 +1665,203 @@ var games = [
             {
                 "name": "HQ",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Air",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Rommel",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "DG",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             },
             {
                 "name": "Out of Supply",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             }
         ]
     },
     "barrageTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
             {
-                "strength": 1,
+                "strength": "1",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "10",
+                        "lo": 2,
+                        "hi": 10,
                         "result": "NE"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "DG"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "2 - 3",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "9",
+                        "lo": 2,
+                        "hi": 9,
                         "result": "NE"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "DG"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "4 - 5",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "8",
+                        "lo": 2,
+                        "hi": 8,
                         "result": "NE"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "DG"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "6 - 8",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "7",
+                        "lo": 2,
+                        "hi": 7,
                         "result": "NE"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "DG"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "9 - 12",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "6",
+                        "lo": 2,
+                        "hi": 6,
                         "result": "NE"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "DG"
                     },
                     {
-                        "lo": "9",
-                        "hi": "12",
+                        "lo": 9,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "13 - 17",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "5",
+                        "lo": 2,
+                        "hi": 5,
                         "result": "NE"
                     },
                     {
-                        "lo": "6",
-                        "hi": "8",
+                        "lo": 6,
+                        "hi": 8,
                         "result": "DG"
                     },
                     {
-                        "lo": "9",
-                        "hi": "11",
+                        "lo": 9,
+                        "hi": 11,
                         "result": "1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "18 - 23",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "NE"
                     },
                     {
-                        "lo": "5",
-                        "hi": "7",
+                        "lo": 5,
+                        "hi": 7,
                         "result": "DG"
                     },
                     {
-                        "lo": "8",
-                        "hi": "10",
+                        "lo": 8,
+                        "hi": 10,
                         "result": "1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "24+",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "NE"
                     },
                     {
-                        "lo": "4",
-                        "hi": "7",
+                        "lo": 4,
+                        "hi": 7,
                         "result": "DG"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
@@ -1865,35 +1871,35 @@ var games = [
             {
                 "name": "No Spotter",
                 "type": "SHIFT",
-                "value": "-2"
+                "value": -2
             },
             {
                 "name": "Salt Marsh",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "City",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Tobruk Trench",
                 "type": "SHIFT",
-                "value": "-4"
+                "value": -4
             },
             {
                 "name": "Trench",
                 "type": "SHIFT",
-                "value": "-2"
+                "value": -2
             }
         ]
     }
 },
 {
-    "id": 4,
+    "id": 104,
     "name": "Gazala",
-    "desc": "Spring 1942",
+    "desc": "The Battle for Tobruk, May-June 1942",
     "sort": 6,
     "players": [
         "Axis",
@@ -1950,7 +1956,7 @@ var games = [
     ],
     "terrains": [
         {
-            "name": {},
+            "name": '',
             "barrage": {
                 "attackmod": 0,
                 "defendmod": 0
@@ -2074,6 +2080,7 @@ var games = [
     "combatTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
@@ -2081,38 +2088,38 @@ var games = [
                 "odds": -3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A3r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "A2"
                     },
                     {
-                        "lo": "7",
-                        "hi": "9",
+                        "lo": 7,
+                        "hi": 9,
                         "result": "A1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r2"
                     }
                 ]
@@ -2121,38 +2128,38 @@ var games = [
                 "odds": -2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "5",
+                        "lo": 4,
+                        "hi": 5,
                         "result": "A2"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "A1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A1D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -2161,43 +2168,43 @@ var games = [
                 "odds": 1,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "A2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A2D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "7",
+                        "lo": 5,
+                        "hi": 7,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -2206,38 +2213,38 @@ var games = [
                 "odds": 2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "6",
+                        "lo": 4,
+                        "hi": 6,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A1D2"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r4"
                     }
                 ]
@@ -2246,38 +2253,38 @@ var games = [
                 "odds": 3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2"
                     },
                     {
-                        "lo": "3",
-                        "hi": "5",
+                        "lo": 3,
+                        "hi": 5,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r4"
                     }
                 ]
@@ -2286,43 +2293,43 @@ var games = [
                 "odds": 4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r4"
                     }
                 ]
@@ -2331,43 +2338,43 @@ var games = [
                 "odds": 5,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D3r4"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D4r4"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r5"
                     }
                 ]
@@ -2377,197 +2384,198 @@ var games = [
             {
                 "name": "HQ",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Air",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Rommel",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "DG",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             }
         ]
     },
     "barrageTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
             {
-                "strength": 1,
+                "strength": "1",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "10",
+                        "lo": 2,
+                        "hi": 10,
                         "result": "NE"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "DG"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "2 - 3",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "9",
+                        "lo": 2,
+                        "hi": 9,
                         "result": "NE"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "DG"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "4 - 5",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "8",
+                        "lo": 2,
+                        "hi": 8,
                         "result": "NE"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "DG"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "6 - 8",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "7",
+                        "lo": 2,
+                        "hi": 7,
                         "result": "NE"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "DG"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "9 - 12",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "6",
+                        "lo": 2,
+                        "hi": 6,
                         "result": "NE"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "DG"
                     },
                     {
-                        "lo": "9",
-                        "hi": "12",
+                        "lo": 9,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "13 - 17",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "5",
+                        "lo": 2,
+                        "hi": 5,
                         "result": "NE"
                     },
                     {
-                        "lo": "6",
-                        "hi": "8",
+                        "lo": 6,
+                        "hi": 8,
                         "result": "DG"
                     },
                     {
-                        "lo": "9",
-                        "hi": "11",
+                        "lo": 9,
+                        "hi": 11,
                         "result": "1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "18 - 23",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "NE"
                     },
                     {
-                        "lo": "5",
-                        "hi": "7",
+                        "lo": 5,
+                        "hi": 7,
                         "result": "DG"
                     },
                     {
-                        "lo": "8",
-                        "hi": "10",
+                        "lo": 8,
+                        "hi": 10,
                         "result": "1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "24+",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "NE"
                     },
                     {
-                        "lo": "4",
-                        "hi": "7",
+                        "lo": 4,
+                        "hi": 7,
                         "result": "DG"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
@@ -2577,43 +2585,43 @@ var games = [
             {
                 "name": "No Spotter",
                 "type": "SHIFT",
-                "value": "-2"
+                "value": -2
             },
             {
                 "name": "Salt Marsh",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Broken",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Rough",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Town",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Tobruk Trench",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Minefield",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             }
         ]
     }
 },
 {
-    "id": 5,
+    "id": 105,
     "name": "Guadalajara",
     "desc": "Last Chance to Take Madrid!",
     "sort": 11,
@@ -2621,7 +2629,7 @@ var games = [
         "Italian/Nationalist",
         "Republican"
     ],
-    "turns": {},
+    "turns": [],
     "phases": [
         "Nationalist: Movement/Reserve",
         "Nationalist: Tank Repair",
@@ -2756,6 +2764,7 @@ var games = [
     "combatTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
@@ -2763,58 +2772,58 @@ var games = [
                 "odds": -2,
                 "results": [
                     {
-                        "lo": "0",
-                        "hi": "0",
+                        "lo": 0,
+                        "hi": 0,
                         "result": "A3r3"
                     },
                     {
-                        "lo": "1",
-                        "hi": "1",
+                        "lo": 1,
+                        "hi": 1,
                         "result": "A2r2"
                     },
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1r2"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "Ar1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "NE"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "Dr1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D1r2"
                     }
                 ]
@@ -2823,58 +2832,58 @@ var games = [
                 "odds": 1,
                 "results": [
                     {
-                        "lo": "0",
-                        "hi": "0",
+                        "lo": 0,
+                        "hi": 0,
                         "result": "A2r2"
                     },
                     {
-                        "lo": "1",
-                        "hi": "1",
+                        "lo": 1,
+                        "hi": 1,
                         "result": "A1r2"
                     },
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "Ar1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "A1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "Dr1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r2"
                     }
                 ]
@@ -2883,58 +2892,58 @@ var games = [
                 "odds": 2,
                 "results": [
                     {
-                        "lo": "0",
-                        "hi": "0",
+                        "lo": 0,
+                        "hi": 0,
                         "result": "A1r2"
                     },
                     {
-                        "lo": "1",
-                        "hi": "2",
+                        "lo": 1,
+                        "hi": 2,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "Ar1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "A1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "Dr1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "D1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r3"
                     }
                 ]
@@ -2943,58 +2952,58 @@ var games = [
                 "odds": 3,
                 "results": [
                     {
-                        "lo": "0",
-                        "hi": "1",
+                        "lo": 0,
+                        "hi": 1,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "Ar1"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "A1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "5",
+                        "lo": 4,
+                        "hi": 5,
                         "result": "A1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "Dr1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "D1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -3003,63 +3012,63 @@ var games = [
                 "odds": 4,
                 "results": [
                     {
-                        "lo": "0",
-                        "hi": "0",
+                        "lo": 0,
+                        "hi": 0,
                         "result": "A1r1"
                     },
                     {
-                        "lo": "1",
-                        "hi": "1",
+                        "lo": 1,
+                        "hi": 1,
                         "result": "Ar2"
                     },
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "NE"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "Dr1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "Dr2"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "D2"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r4"
                     }
                 ]
@@ -3069,152 +3078,153 @@ var games = [
             {
                 "name": "Minor Village",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Flame Attack",
                 "type": "DRM",
-                "value": "3"
+                "value": 3
             },
             {
                 "name": "Flame Defend",
                 "type": "DRM",
-                "value": "-3"
+                "value": -3
             },
             {
                 "name": "Defend Panic",
                 "type": "DRM",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Defend AT",
                 "type": "DRM",
-                "value": "-3"
+                "value": -3
             },
             {
                 "name": "Brihuega attacked from above",
                 "type": "DRM",
-                "value": "2"
+                "value": 2
             },
             {
                 "name": "OOS",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             }
         ]
     },
     "barrageTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
             {
-                "strength": null,
+                "strength": "1 - 2",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "10",
+                        "lo": 2,
+                        "hi": 10,
                         "result": "NE"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "DG"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "3 - 5",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "9",
+                        "lo": 2,
+                        "hi": 9,
                         "result": "NE"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "DG"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "6 - 9",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "8",
+                        "lo": 2,
+                        "hi": 8,
                         "result": "NE"
                     },
                     {
-                        "lo": "9",
-                        "hi": "12",
+                        "lo": 9,
+                        "hi": 12,
                         "result": "DG"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "10 - 14",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "7",
+                        "lo": 2,
+                        "hi": 7,
                         "result": "NE"
                     },
                     {
-                        "lo": "8",
-                        "hi": "11",
+                        "lo": 8,
+                        "hi": 11,
                         "result": "DG"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "15 - 18",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "6",
+                        "lo": 2,
+                        "hi": 6,
                         "result": "NE"
                     },
                     {
-                        "lo": "7",
-                        "hi": "10",
+                        "lo": 7,
+                        "hi": 10,
                         "result": "DG"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "19+",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "5",
+                        "lo": 2,
+                        "hi": 5,
                         "result": "NE"
                     },
                     {
-                        "lo": "6",
-                        "hi": "9",
+                        "lo": 6,
+                        "hi": 9,
                         "result": "DG"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
@@ -3224,30 +3234,30 @@ var games = [
             {
                 "name": "No Spotter",
                 "type": "SHIFT",
-                "value": "-2"
+                "value": -2
             },
             {
                 "name": "Brihuega Spotter",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Village",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Hills",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             }
         ]
     }
 },
 {
-    "id": 6,
+    "id": 106,
     "name": "The Mighty Endeavor",
-    "desc": "The Western Front: 1944-1945",
+    "desc": "The Campaign in Western Europe: 1944 - 1945",
     "sort": 10,
     "players": [
         "Allied",
@@ -3424,6 +3434,7 @@ var games = [
     "combatTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
@@ -3431,38 +3442,38 @@ var games = [
                 "odds": -3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "5",
+                        "lo": 2,
+                        "hi": 5,
                         "result": "A2"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "[A2]"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "[A2]D1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "A1D2r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "[A1]D2r1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r2"
                     }
                 ]
@@ -3471,43 +3482,43 @@ var games = [
                 "odds": -2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A2"
                     },
                     {
-                        "lo": "5",
-                        "hi": "6",
+                        "lo": 5,
+                        "hi": 6,
                         "result": "[A2]"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "[A2]D1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1D1r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "[A1]D2r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r2"
                     }
                 ]
@@ -3516,48 +3527,48 @@ var games = [
                 "odds": 1,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "[A2]"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "[A2]D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "7",
+                        "lo": 6,
+                        "hi": 7,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "[A1]D1r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "[A1]D2r1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r3"
                     }
                 ]
@@ -3566,38 +3577,38 @@ var games = [
                 "odds": 2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A2"
                     },
                     {
-                        "lo": "4",
-                        "hi": "5",
+                        "lo": 4,
+                        "hi": 5,
                         "result": "[A1]D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "[A1]D1r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r3"
                     }
                 ]
@@ -3606,48 +3617,48 @@ var games = [
                 "odds": 3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "[A2]"
                     },
                     {
-                        "lo": "4",
-                        "hi": "5",
+                        "lo": 4,
+                        "hi": 5,
                         "result": "[A2]D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "[A1]D1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "[A1]D2r1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -3656,43 +3667,43 @@ var games = [
                 "odds": 4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "[A2]"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "[A2]D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "[A1]D1r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "D2r1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "10",
+                        "lo": 8,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -3701,43 +3712,43 @@ var games = [
                 "odds": 5,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "[A2]"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "[A2]D1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "[A1]D1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "9",
+                        "lo": 7,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r3"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -3746,38 +3757,38 @@ var games = [
                 "odds": 6,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "[A2]"
                     },
                     {
-                        "lo": "3",
-                        "hi": "3",
+                        "lo": 3,
+                        "hi": 3,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "[A1]D1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "6",
-                        "hi": "9",
+                        "lo": 6,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r3"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -3786,38 +3797,38 @@ var games = [
                 "odds": 7,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1D1"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "D1r1"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "D1r2"
                     },
                     {
-                        "lo": "6",
-                        "hi": "9",
+                        "lo": 6,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r3"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D3r3"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D4r3"
                     }
                 ]
@@ -3827,27 +3838,28 @@ var games = [
             {
                 "name": "Air",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "OOS",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             }
         ]
     },
     "barrageTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
             {
-                "strength": null,
+                "strength": "NA",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "12",
+                        "lo": 2,
+                        "hi": 12,
                         "result": "NE"
                     }
                 ]
@@ -3857,9 +3869,9 @@ var games = [
     }
 },
 {
-    "id": 7,
+    "id": 107,
     "name": "Yom Kippur",
-    "desc": "The Battle for the Sinai: October, 1973",
+    "desc": "The Battle for the Sinai",
     "sort": 4,
     "players": [
         "Egyptian",
@@ -3984,6 +3996,7 @@ var games = [
     "combatTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
@@ -3991,33 +4004,33 @@ var games = [
                 "odds": -4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A2r1*"
                     },
                     {
-                        "lo": "3",
-                        "hi": "4",
+                        "lo": 3,
+                        "hi": 4,
                         "result": "A1r1*"
                     },
                     {
-                        "lo": "5",
-                        "hi": "8",
+                        "lo": 5,
+                        "hi": 8,
                         "result": "A1*"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1*Dr1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "A*D2r2*"
                     }
                 ]
@@ -4026,33 +4039,33 @@ var games = [
                 "odds": -3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1r1*"
                     },
                     {
-                        "lo": "4",
-                        "hi": "7",
+                        "lo": 4,
+                        "hi": 7,
                         "result": "A1*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1*Dr1"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A1*D1r2*"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "A*D2r2*"
                     }
                 ]
@@ -4061,38 +4074,38 @@ var games = [
                 "odds": -2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1r1*"
                     },
                     {
-                        "lo": "3",
-                        "hi": "6",
+                        "lo": 3,
+                        "hi": 6,
                         "result": "A1*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A1*Dr1"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "A1*D1r2*"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "A*D2r2*"
                     }
                 ]
@@ -4101,38 +4114,38 @@ var games = [
                 "odds": 1,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1r1*"
                     },
                     {
-                        "lo": "3",
-                        "hi": "5",
+                        "lo": 3,
+                        "hi": 5,
                         "result": "A1*"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A1*Dr1"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "A*D2r2*"
                     }
                 ]
@@ -4141,33 +4154,33 @@ var games = [
                 "odds": 2,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A1*"
                     },
                     {
-                        "lo": "5",
-                        "hi": "7",
+                        "lo": 5,
+                        "hi": 7,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "A*D2r2*"
                     }
                 ]
@@ -4176,38 +4189,38 @@ var games = [
                 "odds": 3,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1*"
                     },
                     {
-                        "lo": "4",
-                        "hi": "6",
+                        "lo": 4,
+                        "hi": 6,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "A*D2r2*"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D2r2"
                     }
                 ]
@@ -4216,43 +4229,43 @@ var games = [
                 "odds": 4,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "2",
+                        "lo": 2,
+                        "hi": 2,
                         "result": "A1*"
                     },
                     {
-                        "lo": "3",
-                        "hi": "5",
+                        "lo": 3,
+                        "hi": 5,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "A*D2r2*"
                     },
                     {
-                        "lo": "11",
-                        "hi": "11",
+                        "lo": 11,
+                        "hi": 11,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r2"
                     }
                 ]
@@ -4261,38 +4274,38 @@ var games = [
                 "odds": 5,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "A*D2r2*"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "D3r2"
                     }
                 ]
@@ -4301,38 +4314,38 @@ var games = [
                 "odds": 6,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "A*D2r2*"
                     },
                     {
-                        "lo": "10",
-                        "hi": "10",
+                        "lo": 10,
+                        "hi": 10,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "D3r2"
                     }
                 ]
@@ -4341,48 +4354,48 @@ var games = [
                 "odds": 7,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A*D2r2*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A*D2r2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "D3r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -4391,48 +4404,48 @@ var games = [
                 "odds": 8,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A1*D1r1*"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A*D2r2*"
                     },
                     {
-                        "lo": "8",
-                        "hi": "8",
+                        "lo": 8,
+                        "hi": 8,
                         "result": "A*D2r2"
                     },
                     {
-                        "lo": "9",
-                        "hi": "9",
+                        "lo": 9,
+                        "hi": 9,
                         "result": "D2r2"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "D3r2"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -4441,38 +4454,38 @@ var games = [
                 "odds": 9,
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "A1*Dr1*"
                     },
                     {
-                        "lo": "4",
-                        "hi": "4",
+                        "lo": 4,
+                        "hi": 4,
                         "result": "A*D1r1*"
                     },
                     {
-                        "lo": "5",
-                        "hi": "5",
+                        "lo": 5,
+                        "hi": 5,
                         "result": "A*D1r2*"
                     },
                     {
-                        "lo": "6",
-                        "hi": "6",
+                        "lo": 6,
+                        "hi": 6,
                         "result": "A*D2r2*"
                     },
                     {
-                        "lo": "7",
-                        "hi": "7",
+                        "lo": 7,
+                        "hi": 7,
                         "result": "A*D2r2"
                     },
                     {
-                        "lo": "8",
-                        "hi": "10",
+                        "lo": 8,
+                        "hi": 10,
                         "result": "D3r2"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "D3r3"
                     }
                 ]
@@ -4482,202 +4495,203 @@ var games = [
             {
                 "name": "Air",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "HQ",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "Engineer",
                 "type": "SHIFT",
-                "value": "1"
+                "value": 1
             },
             {
                 "name": "DG",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             },
             {
                 "name": "OOS",
                 "type": "MULT",
-                "value": "0.5"
+                "value": 0.5
             }
         ]
     },
     "barrageTable": {
         "dice": {
             "number": 2,
+            "base": "d",
             "sides": 6
         },
         "table": [
             {
-                "strength": 1,
+                "strength": "1",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "10",
+                        "lo": 2,
+                        "hi": 10,
                         "result": "NE"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "DG"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "2 - 3",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "9",
+                        "lo": 2,
+                        "hi": 9,
                         "result": "NE"
                     },
                     {
-                        "lo": "10",
-                        "hi": "11",
+                        "lo": 10,
+                        "hi": 11,
                         "result": "DG"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "4 - 5",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "8",
+                        "lo": 2,
+                        "hi": 8,
                         "result": "NE"
                     },
                     {
-                        "lo": "9",
-                        "hi": "10",
+                        "lo": 9,
+                        "hi": 10,
                         "result": "DG"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "6 - 8",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "7",
+                        "lo": 2,
+                        "hi": 7,
                         "result": "NE"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "DG"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "9 - 12",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "6",
+                        "lo": 2,
+                        "hi": 6,
                         "result": "NE"
                     },
                     {
-                        "lo": "7",
-                        "hi": "8",
+                        "lo": 7,
+                        "hi": 8,
                         "result": "DG"
                     },
                     {
-                        "lo": "9",
-                        "hi": "12",
+                        "lo": 9,
+                        "hi": 12,
                         "result": "1"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "13 - 17",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "5",
+                        "lo": 2,
+                        "hi": 5,
                         "result": "NE"
                     },
                     {
-                        "lo": "6",
-                        "hi": "8",
+                        "lo": 6,
+                        "hi": 8,
                         "result": "DG"
                     },
                     {
-                        "lo": "9",
-                        "hi": "11",
+                        "lo": 9,
+                        "hi": 11,
                         "result": "1"
                     },
                     {
-                        "lo": "12",
-                        "hi": "12",
+                        "lo": 12,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "18 - 23",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "4",
+                        "lo": 2,
+                        "hi": 4,
                         "result": "NE"
                     },
                     {
-                        "lo": "5",
-                        "hi": "7",
+                        "lo": 5,
+                        "hi": 7,
                         "result": "DG"
                     },
                     {
-                        "lo": "8",
-                        "hi": "10",
+                        "lo": 8,
+                        "hi": 10,
                         "result": "1"
                     },
                     {
-                        "lo": "11",
-                        "hi": "12",
+                        "lo": 11,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
             },
             {
-                "strength": null,
+                "strength": "24+",
                 "results": [
                     {
-                        "lo": "2",
-                        "hi": "3",
+                        "lo": 2,
+                        "hi": 3,
                         "result": "NE"
                     },
                     {
-                        "lo": "4",
-                        "hi": "7",
+                        "lo": 4,
+                        "hi": 7,
                         "result": "DG"
                     },
                     {
-                        "lo": "8",
-                        "hi": "9",
+                        "lo": 8,
+                        "hi": 9,
                         "result": "1"
                     },
                     {
-                        "lo": "10",
-                        "hi": "12",
+                        "lo": 10,
+                        "hi": 12,
                         "result": "2"
                     }
                 ]
@@ -4687,31 +4701,31 @@ var games = [
             {
                 "name": "No Spotter",
                 "type": "SHIFT",
-                "value": "-2"
+                "value": -2
             },
             {
                 "name": "Sand Dune",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "City",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             },
             {
                 "name": "Swamp",
                 "type": "SHIFT",
-                "value": "-4"
+                "value": -4
             },
             {
                 "name": "Rough",
                 "type": "SHIFT",
-                "value": "-1"
+                "value": -1
             }
         ]
     }
-}
+},
 
 ];
 module.exports = games;

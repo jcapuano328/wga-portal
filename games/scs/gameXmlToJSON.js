@@ -30,10 +30,12 @@ function makeGame(json) {
 }
 
 function makeDice(dice) {
-	var a = dice.split('d');
+	var a = dice.match(/([0-9]*)(d|b)([0-9]*)/);
+    //console.log(JSON.stringify(a));
     return {
-    	number: +a[0],
-        sides: +a[1]
+    	number: a && a.length > 1 ? +a[1] : 1,
+    	base: a && a.length > 2 ? a[2] : 'd',
+        sides: a && a.length > 3 ? +a[3] : 1
     };
 }
 
@@ -83,7 +85,7 @@ function makeBarrageTable(entries) {
     }
 	return _.map(entries, function(entry) {
     	return {
-        	strength: +entry.Strength,
+        	strength: entry.Strength,
             results: makeResults(entry.BarrageResults.BarrageResult)
         };
     });
@@ -99,8 +101,8 @@ function makeResults(entries) {
     }
 	return _.map(entries, function(entry) {
     	return {
-        	lo: entry.Lo,
-            hi: entry.Hi,
+        	lo: +entry.Lo,
+            hi: +entry.Hi,
             result: entry.Result
         };
     });
@@ -117,7 +119,7 @@ function makeModifierTable(entries) {
     	return {
         	name: entry.Name,
             type: entry.Type,
-            value: entry.Value
+            value: +entry.Value
         };
     });
 }
