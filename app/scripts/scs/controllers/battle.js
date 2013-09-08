@@ -31,6 +31,8 @@ ica.module('wgaPortalScsApp.controllers', [])
         $scope.$on('reset', function() {
         	$scope.changeTurn(0);
             $scope.changePhase(0);
+            $rootScope.current.game.saved.player1VP = 0;
+            $rootScope.current.game.saved.player2VP = 0;
         });
         
 	});
