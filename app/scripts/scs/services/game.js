@@ -33,7 +33,9 @@ ica.module('wgaPortalScsApp.services', [])
                 if (!saved) {
                 	saved = {
                     	turn: 1,
-                        phase: 0
+                        phase: 0,
+                        player1VP: 0,
+                        player2VP: 0
                     }
                 }
                 
@@ -44,7 +46,7 @@ ica.module('wgaPortalScsApp.services', [])
             },
             
         	save: function(battle) {
-            	saveGame(battle.id, battle.saved);
+            	saveGame(battle.battle.id, battle.saved);
             },
             
             nextTurn: function(battle, turn) {

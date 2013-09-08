@@ -3,13 +3,13 @@
 	<!-- Strength -->
 	<div class="row-fluid text-center">
 		<div class="span12">
-			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Barrage:</span>
+			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Strength:</span>
 			<select type="input" ng-model="selectedBarrage" ng-options="b.strength for b in barrage" ng-change="updateResults()"></select>
 		</div>
 	</div>
 
 	<!-- Terrain -->
-	<div class="row-fluid text-center" style="margin-top: 15px">
+	<div class="row-fluid text-center">
 		<div class="span12">
 			<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Terrain:</span>
 			<select type="input" ng-model="selectedTerrain" ng-options="t.name for t in terrain" ng-change="updateResults()"></select>

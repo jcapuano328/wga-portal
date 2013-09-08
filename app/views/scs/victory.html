@@ -1,0 +1,25 @@
+<div class="container-fluid" ng-controller="VictoryCtrl">
+	<!-- Player 1 -->
+	<div class="row-fluid text-center">
+		<div class="span12">
+			<div class="input-prepend input-append">
+				<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">{{player1}}</span>
+				<button class="btn btn-large btn-primary" ng-click="changePlayer1VictoryValue(-1)">-</button>
+				<input class="input-small edit-btn-large" type="number" ng-model="current.game.saved.player1VP" ng-change="changePlayer1VictoryValue(0)"/>
+				<button class="btn btn-large btn-primary" ng-click="changePlayer1VictoryValue(1)">+</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Player 2 -->
+	<div class="row-fluid text-center">
+		<div class="span12">
+			<div class="input-prepend input-append">
+				<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">{{player2}}</span>
+				<button class="btn btn-large btn-primary" ng-click="changePlayer2VictoryValue(-1)">-</button>
+				<input class="input-small edit-btn-large" type="number" ng-model="current.game.saved.player2VP" ng-change="changePlayer2VictoryValue(0)"/>
+				<button class="btn btn-large btn-primary" ng-click="changePlayer2VictoryValue(1)">+</button>
+			</div>
+		</div>
+	</div>
+</div>
