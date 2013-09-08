@@ -101,6 +101,27 @@ ica.module('wgaPortalScsApp.services', [])
                 ret.phaseStr = battle.phases[phase];
             
             	return ret;
-            }
+            },
+            
+	    	diceValue: function(die1, die2, dd, drm) {
+	        	drm = drm || 0;
+	            var dice = 0;
+	            if (dd.base == 'd') {
+	            	var max = dd.number > 1 ? 14 : 8;
+	            	dice = die1 + (dd.number > 1 ? die2 : 0) + drm;
+					if (dice < 0) {dice = 0;}
+	                if (dice > max) {dice = max;}
+	            }
+	            else if (dd.base == 'b') {
+	            	dice = die1*10 + die2 + drm;
+	                if (dice < 11) {dice = 11;}                    
+					else if (dice > 66) {dice = 66;}
+	            }
+                else {
+                	dice = die1 + die2 + drm;
+                }
+	            
+	            return dice;
+	        }
         };
     });
