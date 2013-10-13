@@ -35,8 +35,8 @@
 	<!-- Dice -->
 	<div class="row-fluid text-center" style="margin-top: 5px">
 		<div class="span12">
-			<div class="die" ng-model="dice.die1" ng-class="die(1)" ng-click="dieIncr(1)"></div>
-			<div class="die" ng-model="dice.die2" ng-class="die(2)" ng-click="dieIncr(2)"></div>
+			<div class="die" ng-model="dice.die1" ng-class="die(1)" ng-click="dieIncr(1)" ng-show="showDie(1)"></div>
+			<div class="die" ng-model="dice.die2" ng-class="die(2)" ng-click="dieIncr(2)" ng-show="showDie(2)"></div>
 			<button class="btn btn-large btn-danger" style="margin-left: 10px; margin-bottom: 25px" ng-click="roll()">Roll</button>
 		</div>
 	</div>

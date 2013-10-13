@@ -1,19 +1,22 @@
 'use strict';
 
 ica.module('wgaPortalScsApp.services', [])
-	.service('barrage', function ($log, game) {
+	.service('barrage', function ($log, game, modifier) {
     	return {
         	resolve: function(die1, die2, str, terrain, modifiers, bt) {
 				var dice = game.diceValue(die1, die2, bt.dice);
 				
                 var index = bt.table.indexOf(str);
-                _.each(_.filter(modifiers, function(mod) {return mod.type.toLowerCase() == 'shift';}), function(mod) {
-                	index += mod.value;
-                });
+                
+                index += modifier.modifySHIFT(modifiers);
+                dice += modifier.modifyDRM(modifiers);
                 
 				if (terrain) {
-					dice += terrain.barrage.attackmod;
-					dice += terrain.barrage.defendmod;
+					index += modifier.modifySHIFT([terrain.barrage.attackmod]) + 
+                    		modifier.modifySHIFT([terrain.barrage.defendmod]);
+                
+					dice += modifier.modifyDRM([terrain.barrage.attackmod]) + 
+                    		modifier.modifyDRM([terrain.barrage.defendmod]);
 				}
 
 				if (index < 0) {

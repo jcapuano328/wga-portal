@@ -64,100 +64,208 @@ var games = [
         {
             "name": "Open",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Rough",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Mountain",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 3
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 3
+                }
             }
         },
         {
             "name": "Salt Marsh",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Sand Desert",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0,
-                "defendmod": 3
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 3
+                }
             }
         },
         {
             "name": "Fort,Box",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Minor City",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Major City",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 3
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 3
+                }
             }
         },
         {
             "name": "Delta Marsh",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         }
     ],
@@ -794,45 +902,93 @@ var games = [
         {
             "name": "Open",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Village",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'shift',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                },
             }
         },
         {
             "name": "Woods",
             "barrage": {
-                "attackmod": -1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'drm',
+                    "value": -1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                },
             }
         },
         {
             "name": "Stream",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         }
     ],
@@ -1239,122 +1395,254 @@ var games = [
         {
             "name": '',
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Open",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                },
             }
         },
         {
             "name": "Road",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                },
             }
         },
         {
             "name": "Track",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Slope",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Escarpment Road",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.25,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.25
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "City",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Salt Marsh",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Wadi",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "AT Ditch",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Trench",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         }
     ],
@@ -1958,122 +2246,254 @@ var games = [
         {
             "name": '',
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Open",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Broken",
             "barrage": {
-                "attackmod": -1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'drm',
+                    "value": -1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Rough",
             "barrage": {
-                "attackmod": -1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'drm',
+                    "value": -1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Slope",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Town",
             "barrage": {
-                "attackmod": -1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'drm',
+                    "value": -1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Salt Marsh",
             "barrage": {
-                "attackmod": -1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'drm',
+                    "value": -1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Minefield",
             "barrage": {
-                "attackmod": 1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'drm',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Wadi",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "AT Ditch",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Tobruk Trench",
             "barrage": {
-                "attackmod": -1,
-                "defendmod": 0
+                "attackmod": {
+                	"type": 'drm',
+                    "value": -1
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         }
     ],
@@ -2653,111 +3073,231 @@ var games = [
         {
             "name": "Open",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Village",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Minor Village",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Palacio",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Woods",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Hills",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Wooded Hills",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Minor River",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "River",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.1667,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.1667
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Bridge",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         }
     ],
@@ -3312,122 +3852,254 @@ var games = [
         {
             "name": "Open",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Bocage",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Forest",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "City",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 3
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 3
+                }
             }
         },
         {
             "name": "River",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Fort",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Rough",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Mountain",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 4
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 4
+                }
             }
         },
         {
             "name": "Wetlands",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Rhine River",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.333,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.333
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Sea Line",
             "barrage": {
-                "attackmod": 0,
-                "defendmod": 0
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.25,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.25
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         }
     ],
@@ -3918,78 +4590,162 @@ var games = [
         {
             "name": "Open",
             "barrage": {
-                "attackmod": null,
-                "defendmod": null
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 1
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Rough",
             "barrage": {
-                "attackmod": null,
-                "defendmod": null
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Sand Dune",
             "barrage": {
-                "attackmod": null,
-                "defendmod": null
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "Swamp",
             "barrage": {
-                "attackmod": null,
-                "defendmod": null
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 2
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
             }
         },
         {
             "name": "City",
             "barrage": {
-                "attackmod": null,
-                "defendmod": null
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 1,
-                "defendmod": 3
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 3
+                }
             }
         },
         {
             "name": "Suez Canal",
             "barrage": {
-                "attackmod": null,
-                "defendmod": null
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.25,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.25
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         },
         {
             "name": "Minor Canal",
             "barrage": {
-                "attackmod": null,
-                "defendmod": null
+                "attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             },
             "combat": {
-                "attackmod": 0.5,
-                "defendmod": 1
+                "attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
             }
         }
     ],
@@ -4726,6 +5482,824 @@ var games = [
         ]
     }
 },
+
+
+
+{
+    "id": 108,
+    "name": "Drive On Paris",
+    "desc": "The First 100 Days on the Western Front: 1914",
+    "sort": 7,
+    "players": [
+        "German",
+        "Allied"
+    ],
+    "turns": [
+        "Aug 4-7 1914",
+        "Aug 8-7 1914",
+        "Aug 12-15 1914",
+        "Aug 16-19 1914",
+        "Aug 20-23 1914",
+        "Aug 24-27 1914",
+        "Aug 28-31 1914",
+        
+        "Sep 1-4 1914",
+        "Sep 5-8 1914",
+        "Sep 9-12 1914",
+        "Sep 13-16 1914",
+        "Sep 17-20 1914",
+        "Sep 21-24 1914",
+        "Sep 25-28 1914",
+        
+        "Sep 29-Oct 2 1914",
+        "Oct 3-6 1914",
+        "Oct 7-10 1914",
+        "Oct 11-14 1914",
+        "Oct 15-18 1914",
+        "Oct 19-22 1914",
+        "Oct 23-26 1914",
+        "Oct 27-30 1914",
+        "Oct 31-Nov 3 1914",
+        
+        "Nov 4-7 1914",
+        "Nov 8-11 1914"
+    ],
+    "phases": [
+        "German: Reinforcements",
+        "German: Reconstitution",
+        "German: Reserves",
+        "German: Movement",
+        "German: Siege Gun",
+        "German: Combat",
+        "German: Breakthrough",
+        "German: Exploitation",
+        "German: Supply",
+    
+        "Allied: Reinforcements",
+        "Allied: Reconstitution",
+        "Allied: Reserves",
+        "Allied: Movement",
+        "Allied: Combat",
+        "Allied: Breakthrough",
+        "Allied: Exploitation",
+        "Allied: Supply"
+    ],
+    "terrains": [
+        {
+            "name": 'Clear',
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": 'mult',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 1
+                }
+            }
+        },
+        {
+            "name": "Major City",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": 'mult',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
+            }
+        },
+        {
+            "name": "City",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": 'mult',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": 'shift',
+                    "value": 1
+                }
+            }
+        },
+        {
+            "name": "Canals",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 1
+                }
+            }
+        },
+        {
+            "name": "Marsh",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 1
+                }
+            }
+        },
+        {
+            "name": "Major River",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": 'mult',
+                    "value": 0.5
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 1
+                }
+            }
+        },
+        {
+            "name": "Minor River",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": 'shift',
+                    "value": 1
+                }
+            }
+        },
+        {
+            "name": "Woods",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": 'shift',
+                    "value": 1
+                }
+            }
+        },
+        {
+            "name": "Foot Hills",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 2
+                }
+            }
+        },
+        {
+            "name": "Mountains",
+            "barrage": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 0
+                },
+                "defendmod": {
+                	"type": '',
+                    "value": 0
+                }
+            },
+            "combat": {
+            	"attackmod": {
+                	"type": '',
+                    "value": 1
+                },
+                "defendmod": {
+                	"type": 'mult',
+                    "value": 3
+                }
+            }
+        }
+    ],
+    "combatTable": {
+        "dice": {
+            "number": 2,
+            "base": "d",
+            "sides": 6
+        },
+        "table": [
+            {
+                "odds": -4,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 2,
+                        "result": "A5"
+                    },
+                    {
+                        "lo": 3,
+                        "hi": 4,
+                        "result": "A4"
+                    },
+                    {
+                        "lo": 5,
+                        "hi": 8,
+                        "result": "A3"
+                    },
+                    {
+                        "lo": 9,
+                        "hi": 9,
+                        "result": "A2"
+                    },
+                    {
+                        "lo": 10,
+                        "hi": 10,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A2D1r1"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A1*D2r1@"
+                    }
+                ]
+            },
+            {
+                "odds": -3,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 3,
+                        "result": "A4"
+                    },
+                    {
+                        "lo": 4,
+                        "hi": 7,
+                        "result": "A3"
+                    },
+                    {
+                        "lo": 8,
+                        "hi": 8,
+                        "result": "A2"
+                    },
+                    {
+                        "lo": 9,
+                        "hi": 9,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 10,
+                        "hi": 10,
+                        "result": "A2D1r1"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A1*D2r1@"
+                    }
+                ]
+            },
+            {
+                "odds": -2,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 2,
+                        "result": "A4"
+                    },
+                    {
+                        "lo": 3,
+                        "hi": 5,
+                        "result": "A3"
+                    },
+                    {
+                        "lo": 6,
+                        "hi": 6,
+                        "result": "A2"
+                    },
+                    {
+                        "lo": 7,
+                        "hi": 8,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 9,
+                        "hi": 9,
+                        "result": "A2D1r1"
+                    },
+                    {
+                        "lo": 10,
+                        "hi": 10,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A1*D2r1@"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A*D3r2@"
+                    }
+                ]
+            },
+            {
+                "odds": 1,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 2,
+                        "result": "A4"
+                    },
+                    {
+                        "lo": 3,
+                        "hi": 4,
+                        "result": "A3"
+                    },
+                    {
+                        "lo": 5,
+                        "hi": 5,
+                        "result": "A2"
+                    },
+                    {
+                        "lo": 6,
+                        "hi": 7,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 8,
+                        "hi": 8,
+                        "result": "A1D1r1"
+                    },
+                    {
+                        "lo": 9,
+                        "hi": 10,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A1*D3r2@"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A*D3r2@"
+                    }
+                ]
+            },
+            {
+                "odds": 2,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 3,
+                        "result": "A3"
+                    },
+                    {
+                        "lo": 4,
+                        "hi": 4,
+                        "result": "A2"
+                    },
+                    {
+                        "lo": 5,
+                        "hi": 5,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 6,
+                        "hi": 6,
+                        "result": "A1D1"
+                    },
+                    {
+                        "lo": 7,
+                        "hi": 7,
+                        "result": "A1D1r1"
+                    },
+                    {
+                        "lo": 8,
+                        "hi": 8,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 9,
+                        "hi": 9,
+                        "result": "A1*D3r1"
+                    },
+                    {
+                        "lo": 10,
+                        "hi": 10,
+                        "result": "A*D3r2@"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A*D3r2@"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A*D4r2@"
+                    }
+                ]
+            },
+            {
+                "odds": 3,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 2,
+                        "result": "A3D1"
+                    },
+                    {
+                        "lo": 3,
+                        "hi": 4,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 5,
+                        "hi": 5,
+                        "result": "A1D2"
+                    },
+                    {
+                        "lo": 6,
+                        "hi": 6,
+                        "result": "A1D2r1"
+                    },
+                    {
+                        "lo": 7,
+                        "hi": 8,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 9,
+                        "hi": 10,
+                        "result": "A*D3r2@"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A*D4r2@"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A*D4r2@"
+                    }
+                ]
+            },
+            {
+                "odds": 4,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 3,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 4,
+                        "hi": 4,
+                        "result": "A1D2"
+                    },
+                    {
+                        "lo": 5,
+                        "hi": 5,
+                        "result": "A1D2r1"
+                    },
+                    {
+                        "lo": 6,
+                        "hi": 6,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 7,
+                        "hi": 8,
+                        "result": "A1*D3r2@"
+                    },
+                    {
+                        "lo": 9,
+                        "hi": 10,
+                        "result": "A*D3r2@"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A*D4r2@"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A*D5r3@"
+                    }
+                ]
+            },
+            {
+                "odds": 5,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 2,
+                        "result": "A2D1"
+                    },
+                    {
+                        "lo": 3,
+                        "hi": 3,
+                        "result": "A2D2"
+                    },
+                    {
+                        "lo": 4,
+                        "hi": 5,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 6,
+                        "hi": 7,
+                        "result": "A1*D3r2@"
+                    },
+                    {
+                        "lo": 8,
+                        "hi": 9,
+                        "result": "A*D3r2@"
+                    },
+                    {
+                        "lo": 10,
+                        "hi": 10,
+                        "result": "A*D4r2@"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 12,
+                        "result": "A*D5r3@"
+                    }
+                ]
+            },
+            {
+                "odds": 6,
+                "results": [
+                    {
+                        "lo": 2,
+                        "hi": 2,
+                        "result": "A2D2"
+                    },
+                    {
+                        "lo": 3,
+                        "hi": 3,
+                        "result": "A1*D2r1"
+                    },
+                    {
+                        "lo": 4,
+                        "hi": 4,
+                        "result": "A1*D2r2"
+                    },
+                    {
+                        "lo": 5,
+                        "hi": 6,
+                        "result": "A1*D3r2"
+                    },
+                    {
+                        "lo": 7,
+                        "hi": 7,
+                        "result": "A*D3r2@"
+                    },
+                    {
+                        "lo": 8,
+                        "hi": 9,
+                        "result": "A*D4r2@"
+                    },
+                    {
+                        "lo": 10,
+                        "hi": 10,
+                        "result": "A*D5r2@"
+                    },
+                    {
+                        "lo": 11,
+                        "hi": 11,
+                        "result": "A*D5r3@"
+                    },
+                    {
+                        "lo": 12,
+                        "hi": 12,
+                        "result": "A*D6r4@"
+                    }
+                ]
+            }
+        ],
+        "modifiers": [
+            {
+                "name": "German Assault KG",
+                "type": "SHIFT",
+                "value": 1
+            },
+            {
+                "name": "BEF Attack",
+                "type": "DRM",
+                "value": 1
+            },
+            {
+                "name": "BEF Defend",
+                "type": "SHIFT",
+                "value": 1
+            },
+            {
+                "name": "Belgium Armored Car",
+                "type": "DRM",
+                "value": 1
+            }
+        ]
+    },
+    "barrageTable": {
+        "dice": {
+            "number": 1,
+            "base": "d",
+            "sides": 6
+        },
+        "table": [
+            {
+                "strength": "6 or less",
+                "results": [
+                    {
+                        "lo": 1,
+                        "hi": 2,
+                        "result": "NE"
+                    },
+                    {
+                        "lo": 3,
+                        "hi": 6,
+                        "result": "Reduced"
+                    }
+                ]
+            },
+            {
+                "strength": "7 - 15",
+                "results": [
+                    {
+                        "lo": 1,
+                        "hi": 3,
+                        "result": "NE"
+                    },
+                    {
+                        "lo": 4,
+                        "hi": 6,
+                        "result": "Reduced"
+                    }
+                ]
+            },
+            {
+                "strength": "16 - 18",
+                "results": [
+                    {
+                        "lo": 1,
+                        "hi": 4,
+                        "result": "NE"
+                    },
+                    {
+                        "lo": 5,
+                        "hi": 6,
+                        "result": "Reduced"
+                    }
+                ]
+            },
+            {
+                "strength": "20 or more",
+                "results": [
+                    {
+                        "lo": 1,
+                        "hi": 5,
+                        "result": "NE"
+                    },
+                    {
+                        "lo": 6,
+                        "hi": 6,
+                        "result": "Reduced"
+                    }
+                ]
+            }
+        ],
+        "modifiers": [
+            {
+                "name": "Skoda",
+                "type": "DRM",
+                "value": 0
+            },
+            {
+                "name": "Krupp",
+                "type": "DRM",
+                "value": 1
+            },
+            {
+                "name": "Assault KG",
+                "type": "DRM",
+                "value": 1
+            }
+        ]
+    }
+},
+
 
 ];
 module.exports = games;

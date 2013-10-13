@@ -53,13 +53,14 @@ ica.module('wgaPortalScsApp.controllers', [])
         }
         
         $scope.die = function(value) {
-        	if (value < 1) {
-            	value = 1;
-            }
-            else if (value >= _dice.getCount()) {
-            	value = _dice.getCount();
+        	if (value < 1 || value > _dice.getCount()) {
+            	return 'one';
             }
             return _dice.getDieEx(value).name();
+        }
+        
+        $scope.showDie = function(die) {
+        	return die <= _dice.getCount();
         }
         
         function resolveBarrage() {

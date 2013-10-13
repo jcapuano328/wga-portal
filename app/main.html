@@ -6,9 +6,9 @@
 <script id="gamesView" type="text/ng-template">
 	<div class="well">
 	    <h3 class="">Games</h3>
-		<div class="list-group">
-			<a id="{{game.id}}" href="{{game.url}}" class="list-group-item" ng-repeat="game in games | orderBy: 'title'" target="_self">{{game.title}}<span class="badge pull-right">{{game.publisher}}</span></a>
-		</div>
+		<h4 ng-repeat="game in games | orderBy: 'title'">
+			<a id="{{game.id}}" href="{{game.url}}" class="list-group-item"  target="_self">{{game.title}}<span class="badge pull-right">{{game.publisher}}</span></a>
+		</h4>			
 	</div>
 </script>
 

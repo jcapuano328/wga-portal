@@ -4,7 +4,7 @@ var express = require('express'),
 	router = require('./lib/router');
  
 var app = express();
-app.use(express.logger());
+app.use(express.logger('dev'));
 
 // Configuration
 

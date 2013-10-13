@@ -1,12 +1,12 @@
-var log = require('../../lib/logger'),
+var log = require('../lib/logger'),
 	Q = require('q'), 
 	_ = require('underscore'), 
-	gameMan = require('../../lib/game-manager');
+	gameMan = require('../lib/game-manager');
 
 function assembleGames() {
 	var games = [];
     
-    games = require('../games');
+    games = require('../games/games');
     
     return games;
 }
