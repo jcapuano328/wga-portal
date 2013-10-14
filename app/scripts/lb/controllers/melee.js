@@ -26,9 +26,14 @@ ica.module('wgaPortalLbApp.controllers', [])
 		$scope.attackerValue = 0;
 		$scope.defenderValue = 0;        
         $scope.result = '';
-        $scope.leaderLoss = '';
-        
-        
+        $scope.isWounded = false;
+        $scope.isKilled = false;
+        $scope.isCaptured = false;
+        $scope.attacker = false;
+        $scope.defender = false;
+        $scope.injury = '';
+        $scope.duration = 0;
+
         $scope.changeAttackerValue = function(c) {
         	$log.info('Change melee attacker value');
         	if ($scope.attackerValue + c < 1) {
@@ -119,8 +124,7 @@ ica.module('wgaPortalLbApp.controllers', [])
 	        	$scope.unitTotal += c;
             }
         }
-        
-        
+
 		$scope.updateUnitTotal = function() {
         	$log.info('Update unit total');
             
@@ -204,7 +208,15 @@ ica.module('wgaPortalLbApp.controllers', [])
         function resolveCombat() {
         	$log.info('Resolve melee combat');
         	$scope.result = meleeCombat.resolve($scope.selectedOdds, ($scope.dice.die1 * 10) + $scope.dice.die2);
-            $scope.leaderLoss = meleeCombat.leaderloss(($scope.dice.die1 * 10) + $scope.dice.die2, $scope.dice.die3, $scope.dice.die4, $scope.dice.die5);
+            var loss = $scope.result != 'NE' ? meleeCombat.leaderloss(($scope.dice.die1 * 10) + $scope.dice.die2, $scope.dice.die3, $scope.dice.die4, $scope.dice.die5) : {};
+
+            $scope.isWounded = loss.wounded;
+            $scope.isKilled = loss.killed;
+            $scope.isCaptured = loss.captured;
+            $scope.attacker = loss.attacker;
+            $scope.defender = loss.defender;
+            $scope.injury = loss.injury;
+            $scope.duration = loss.duration;
         }
         
 	});

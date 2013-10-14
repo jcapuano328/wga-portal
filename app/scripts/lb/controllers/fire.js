@@ -22,9 +22,14 @@ ica.module('wgaPortalLbApp.controllers', [])
         	die5: 1
         };
         $scope.result = '';
-        $scope.leaderLoss = '';
-        
-        
+        $scope.isWounded = false;
+        $scope.isKilled = false;
+        $scope.isCaptured = false;
+        $scope.attacker = false;
+        $scope.defender = false;
+        $scope.injury = '';
+        $scope.duration = 0;
+
         $scope.changeAttackerValue = function(c) {
         	$log.info('Change attacker value');
         	if ($scope.attackerValue + c < 1) {
@@ -131,7 +136,14 @@ ica.module('wgaPortalLbApp.controllers', [])
         function resolveCombat() {
         	$log.info('Resolve combat');
         	$scope.result = fireCombat.resolve($scope.selectedOdds, $scope.defenderIncrements, ($scope.dice.die1 * 10) + $scope.dice.die2);
-            $scope.leaderLoss = fireCombat.leaderloss(($scope.dice.die1 * 10) + $scope.dice.die2, $scope.dice.die3, $scope.dice.die4, $scope.dice.die5);
+            var loss = $scope.result != 'NE' ? fireCombat.leaderloss(($scope.dice.die1 * 10) + $scope.dice.die2, $scope.dice.die3, $scope.dice.die4, $scope.dice.die5) : {}
+            $scope.isWounded = loss.wounded;
+            $scope.isKilled = loss.killed;
+            $scope.isCaptured = loss.captured;
+            $scope.attacker = loss.attacker;
+            $scope.defender = loss.defender;
+            $scope.injury = loss.injury;
+            $scope.duration = loss.duration;
         }
         
         function findNearest(value, neg, values) {

@@ -1,0 +1,8 @@
+<img src="/images/lb/attacker.png" height="32" width="32" ng-show="attacker"></img>
+<img src="/images/lb/defender.png" height="32" width="32" ng-show="defender"></img>
+<input type="text" class="input-small" readonly="readonly" ng-show="attacker || defender" ng-model="injury"/>
+<img src="/images/lb/ambulance.png" height="32" width="32" ng-show="isWounded"></img>
+<img src="/images/lb/tombstone.png" height="32" width="32" ng-show="isKilled"></img>
+<img src="/images/lb/capture.svg" height="24" width="24" ng-show="isCaptured"></img>
+<input type="text" class="input-mini" readonly="readonly" ng-show="duration > 0" ng-model="duration"/>
+<label class="add-on" ng-show="duration > 0">hours</label>

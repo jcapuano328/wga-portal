@@ -72,13 +72,10 @@
 	
 	<!-- Results -->
 	<div class="row-fluid text-center" style="margin-top: 5px">
-		<div class="span6 input-prepend">
-			<span class="add-on" style="padding-right: 35px">Results:</span>
-			<input type="text" readonly="readonly" ng-model="result"/>
-		</div>
-		<div class="span6 input-prepend">
-			<span class="add-on">Leader Loss:</span>
-			<input type="text" readonly="readonly" ng-model="leaderLoss"/>
+		<div class="span6 input-prepend input-append">
+			<span class="add-on">Results:</span>
+			<input type="text" class="input-mini" readonly="readonly" ng-model="result"/>
+            <% include leaderloss.html %>
 		</div>
 	</div>
 </div>
