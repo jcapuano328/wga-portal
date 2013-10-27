@@ -5,7 +5,7 @@ var games = [
     {
     	id: _id++,
     	name: 'Halle', 
-        publisher: 'Martial Enterprises',
+        publisher: 'Marshal Enterprises',
         sort: 0,
         scenarios: [
         	{
@@ -55,7 +55,7 @@ var games = [
     {
     	id: _id++,
     	name: 'Raszyn', 
-        publisher: 'Martial Enterprises',
+        publisher: 'Marshal Enterprises',
         sort: 1,
         scenarios: [
         	{
@@ -105,13 +105,247 @@ var games = [
     },
     {
     	id: _id++,
-    	name: 'Moeckern', 
-        publisher: 'Martial Enterprises',
+    	name: 'Leipzig', 
+        publisher: 'Marshal Enterprises',
         sort: 2,
         scenarios: [
+        
+        
         	{
 			    id: _id++,
-				name: 'Largely Historical',
+				name: 'The Southern Battle',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 9,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 18,
+			    endMinute: 0
+            },
+        
+        	{
+			    id: _id++,
+				name: 'Murat Reaches for the Tsar',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 15,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 17,
+			    endMinute: 20
+            },
+        
+        	{
+			    id: _id++,
+				name: 'Markkleeberg: The Desparate Crossing',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 9,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 12,
+			    endMinute: 0
+            },
+        
+        	{
+			    id: _id++,
+				name: 'The Wachau Cauldron',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 9,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 18,
+			    endMinute: 0
+            },
+        
+        	{
+			    id: _id++,
+				name: "Liebertwolkwitz: Lauriston's Last Line: Teil A",
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 9,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 12,
+			    endMinute: 0
+            },
+        	{
+			    id: _id++,
+				name: "Liebertwolkwitz: Lauriston's Last Line: Teil B",
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 12,
+			    startMinute: 20,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 18,
+			    endMinute: 0
+            },
+        
+        	{
+			    id: _id++,
+				name: 'Doelitz: Largely Historical',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 9,
+			    startMinute: 40,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 18,
+			    endMinute: 0
+            },
+        	{
+			    id: _id++,
+				name: "Doelitz: Schwarzenberg's Plan",
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 9,
+			    startMinute: 40,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 18,
+			    endMinute: 0
+            },
+        	{
+			    id: _id++,
+				name: 'Doelitz: Retake Doelitz!',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 14,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 17,
+			    endMinute: 0
+            },
+        
+        	{
+			    id: _id++,
+				name: 'Lindenau: Largely Historical',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 10,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 14,
+			    endMinute: 40
+            },
+        	{
+			    id: _id++,
+				name: "Lindenau: Schwarzenberg's Caution",
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 10,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 14,
+			    endMinute: 40
+            },
+        	{
+			    id: _id++,
+				name: 'Lindenau: Screening Action',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 10,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 14,
+			    endMinute: 40
+            },
+        	{
+			    id: _id++,
+				name: 'Lindenau: Napolean Breaks Out',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 10,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 16,
+			    endMinute: 40
+            },
+        
+        	{
+			    id: _id++,
+				name: 'Wiederitzsch: Largely Historical',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 16,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 19,
+			    endMinute: 40
+            },
+        	{
+			    id: _id++,
+				name: 'Wiederitzsch: Attack on Wiederitzsch',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 16,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 19,
+			    endMinute: 40
+            },
+        	{
+			    id: _id++,
+				name: 'Wiederitzsch: Moeckern and Wiederitzsch',
+			    startYear: 1813,
+			    startMonth: 9,
+			    startDay: 16,
+			    startHour: 13,
+			    startMinute: 0,
+			    endYear: 1813,
+			    endMonth: 9,
+			    endDay: 16,
+			    endHour: 19,
+			    endMinute: 40
+            },
+            
+        	{
+			    id: _id++,
+				name: 'Moeckern: Largely Historical',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -125,7 +359,7 @@ var games = [
             },
         	{
 			    id: _id++,
-				name: 'Optional Reinforcements and French Free Deployment',
+				name: 'Moeckern: Optional Reinforcements and French Free Deployment',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -139,7 +373,7 @@ var games = [
             },
         	{
 			    id: _id++,
-				name: 'Cavalry Battles in Saxony',
+				name: 'Moeckern: Cavalry Battles in Saxony',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -153,7 +387,7 @@ var games = [
             },
         	{
 			    id: _id++,
-				name: 'von Bluecher Vorwaerts!!!',
+				name: 'Moeckern: von Bluecher Vorwaerts!!!',
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -167,7 +401,7 @@ var games = [
             },
         	{
 			    id: _id++,
-				name: "In the Balance...Marmont's Counter Attack",
+				name: "Moeckern: In the Balance...Marmont's Counter Attack",
 			    startYear: 1813,
 			    startMonth: 9,
 			    startDay: 16,
@@ -178,119 +412,6 @@ var games = [
 			    endDay: 17,
 			    endHour: 0,
 			    endMinute: 0
-            }
-        ]
-    },
-    {
-    	id: _id++,
-    	name: 'Wiederitzsch', 
-        publisher: 'Martial Enterprises',
-        sort: 3,
-        scenarios: [
-        	{
-			    id: _id++,
-				name: 'Largely Historical',
-			    startYear: 1813,
-			    startMonth: 9,
-			    startDay: 16,
-			    startHour: 16,
-			    startMinute: 0,
-			    endYear: 1813,
-			    endMonth: 9,
-			    endDay: 16,
-			    endHour: 19,
-			    endMinute: 40
-            },
-        	{
-			    id: _id++,
-				name: 'Attack on Wiederitzsch',
-			    startYear: 1813,
-			    startMonth: 9,
-			    startDay: 16,
-			    startHour: 16,
-			    startMinute: 0,
-			    endYear: 1813,
-			    endMonth: 9,
-			    endDay: 16,
-			    endHour: 19,
-			    endMinute: 40
-            },
-        	{
-			    id: _id++,
-				name: 'Moeckern and Wiederitzsch',
-			    startYear: 1813,
-			    startMonth: 9,
-			    startDay: 16,
-			    startHour: 13,
-			    startMinute: 0,
-			    endYear: 1813,
-			    endMonth: 9,
-			    endDay: 16,
-			    endHour: 19,
-			    endMinute: 40
-            }
-        ]
-    },
-    {
-    	id: _id++,
-    	name: 'Lindenau', 
-        publisher: 'Martial Enterprises',
-        sort: 4,
-        scenarios: [
-        	{
-			    id: _id++,
-				name: 'Largely Historical',
-			    startYear: 1813,
-			    startMonth: 9,
-			    startDay: 16,
-			    startHour: 10,
-			    startMinute: 0,
-			    endYear: 1813,
-			    endMonth: 9,
-			    endDay: 16,
-			    endHour: 14,
-			    endMinute: 40
-            },
-        	{
-			    id: _id++,
-				name: "Schwarzenburg's Caution",
-			    startYear: 1813,
-			    startMonth: 9,
-			    startDay: 16,
-			    startHour: 10,
-			    startMinute: 0,
-			    endYear: 1813,
-			    endMonth: 9,
-			    endDay: 16,
-			    endHour: 14,
-			    endMinute: 40            },
-        	{
-			    id: _id++,
-				name: 'Screening Action',
-			    startYear: 1813,
-			    startMonth: 9,
-			    startDay: 16,
-			    startHour: 10,
-			    startMinute: 0,
-			    endYear: 1813,
-			    endMonth: 9,
-			    endDay: 16,
-			    endHour: 14,
-			    endMinute: 40
-            },
-        	{
-			    id: _id++,
-				name: 'Napolean Breaks Out',
-			    startYear: 1813,
-			    startMonth: 9,
-			    startDay: 16,
-			    startHour: 10,
-			    startMinute: 0,
-			    endYear: 1813,
-			    endMonth: 9,
-			    endDay: 16,
-			    endHour: 16,
-			    endMinute: 40
             }
         ]
     }
