@@ -84,8 +84,8 @@ ica.module('wgaPortalLbApp.controllers', [])
         
         $scope.changeUnitLosses = function(c) {
         	$log.info('Change melee unit losses');
-        	if ($scope.unitLosses + c < 1) {
-            	$scope.unitLosses = 1;
+        	if ($scope.unitLosses + c < 0) {
+            	$scope.unitLosses = 0;
 			}
             else {
 	        	$scope.unitLosses += c;
@@ -106,8 +106,8 @@ ica.module('wgaPortalLbApp.controllers', [])
         
         $scope.changeUnitLance = function(c) {
         	$log.info('Change melee unit lance');
-        	if ($scope.unitLance + c < 1) {
-            	$scope.unitLance = 1;
+        	if ($scope.unitLance + c < 0) {
+            	$scope.unitLance = 0;
 			}
             else {
 	        	$scope.unitLance += c;
@@ -155,6 +155,12 @@ ica.module('wgaPortalLbApp.controllers', [])
 			$scope.unitTotal = val + lance;
         }        
         
+        $scope.updateOdds = function() {
+        	$log.info('Update melee odds');
+            calcOdds();        
+            resolveCombat();        
+        }        	
+
         $scope.updateResults = function() {
         	$log.info('Update melee results');
             resolveCombat();        

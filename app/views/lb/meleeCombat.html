@@ -11,7 +11,7 @@
 				<div class="span12 input-prepend input-append">
 					<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Attacker:&nbsp</span>
 					<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(-1)">-</button>
-					<input class="input-small edit-btn-large" type="number" ng-model="attackerValue" ng-change="changeAttackerValue(0)"/>
+					<input class="input-small edit-btn-large" type="number" ng-model="attackerValue" ng-change="updateOdds()"/>
 					<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(1)">+</button>
 				</div>
 			</div>
@@ -25,7 +25,7 @@
 			    <div class="span12 input-prepend input-append">
 				    <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Defender:</span>
 				    <button class="btn btn-large btn-primary" ng-click="changeDefenderValue(-1)">-</button>
-				    <input class="input-small edit-btn-large" type="number" ng-model="defenderValue" ng-change="changeDefenderValue(0)"/>
+				    <input class="input-small edit-btn-large" type="number" ng-model="defenderValue" ng-change="updateOdds()"/>
 				    <button class="btn btn-large btn-primary" ng-click="changeDefenderValue(1)">+</button>
 			    </div>
 			</div>
@@ -78,7 +78,7 @@
 				        <div class="span12 input-prepend input-append">
 					        <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Incr:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 					        <button class="btn btn-large btn-primary" ng-click="changeUnitIncrements(-1)">-</button>
-					        <input class="input-small edit-btn-large" type="number" ng-model="unitIncrements" ng-change="changeUnitIncrements(0)"/>
+					        <input class="input-small edit-btn-large" type="number" ng-model="unitIncrements" ng-change="updateUnitTotal()"/>
 					        <button class="btn btn-large btn-primary" ng-click="changeUnitIncrements(1)">+</button>
 				        </div>
 					</div>
@@ -86,7 +86,7 @@
 				        <div class="span12 input-prepend input-append">
 					        <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Losses:</span>
 					        <button class="btn btn-large btn-primary" ng-click="changeUnitLosses(-1)">-</button>
-					        <input class="input-small edit-btn-large" type="number" ng-model="unitLosses" ng-change="changeUnitLosses(0)"/>
+					        <input class="input-small edit-btn-large" type="number" ng-model="unitLosses" ng-change="updateUnitTotal()"/>
 					        <button class="btn btn-large btn-primary" ng-click="changeUnitLosses(1)">+</button>
 				        </div>
 					</div>
@@ -94,7 +94,7 @@
 		                <div class="span12 input-prepend input-append">
 			                <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Melee:&nbsp;</span>
 			                <button class="btn btn-large btn-primary" ng-click="changeUnitMelee(-1)">-</button>
-			                <input class="input-small edit-btn-large" type="number" ng-model="unitMelee" ng-change="changeUnitMelee(0)" />
+			                <input class="input-small edit-btn-large" type="number" ng-model="unitMelee" ng-change="updateUnitTotal()" />
 			                <button class="btn btn-large btn-primary" ng-click="changeUnitMelee(1)">+</button>
 		                </div>
 					</div>
@@ -102,7 +102,7 @@
 		                <div class="span12 input-prepend input-append">
 			                <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Lance:&nbsp;</span>
 			                <button class="btn btn-large btn-primary" ng-click="changeUnitLance(-1)">-</button>
-			                <input class="input-small edit-btn-large" type="number" ng-model="unitLance" ng-change="changeUnitLance(0)" />
+			                <input class="input-small edit-btn-large" type="number" ng-model="unitLance" ng-change="updateUnitTotal()" />
 			                <button class="btn btn-large btn-primary" ng-click="changeUnitLance(1)">+</button>
 		                </div>
 					</div>
@@ -110,7 +110,7 @@
 		                <div class="span12 input-prepend input-append">
 			                <span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Total:&nbsp;&nbsp;</span>
 			                <button class="btn btn-large btn-primary" ng-click="changeUnitTotal(-1)">-</button>
-			                <input class="input-small edit-btn-large" type="number" ng-model="unitTotal" ng-change="changeUnitTotal(0)" />
+			                <input class="input-small edit-btn-large" type="number" ng-model="unitTotal" xng-change="changeUnitTotal(0)" />
 			                <button class="btn btn-large btn-primary" ng-click="changeUnitTotal(1)">+</button>
 		                </div>
 					</div>
