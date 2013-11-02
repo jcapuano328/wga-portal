@@ -9,7 +9,7 @@
 					<div class="span12 input-prepend input-append">
 						<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Value:</span>
 						<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(-1)">-</button>
-						<input class="input-small edit-btn-large" type="number" ng-model="attackerValue" ng-change="changeAttackerValue(0)"/>
+						<input class="input-small edit-btn-large" type="number" ng-model="attackerValue" ng-change="updateOdds()"/>
 						<button class="btn btn-large btn-primary" ng-click="changeAttackerValue(1)">+</button>
 					</div>
 				</div>
@@ -19,7 +19,7 @@
 					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attacker1_3" ng-change="updateAttackValue(3.0)">x1/3</button>
 					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attacker1_2" ng-change="updateAttackValue(2.0)">x1/2</button>
 					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attacker3_2" ng-change="updateAttackValue(1.5)">x3/2</button>
-					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attackerCann" ng-change="updateAttackCannister()">Cannister</button>
+					        <button type="button" class="btn btn-large btn-primary" btn-checkbox ng-model="attackerCann" ng-change="updateOdds()">Cannister</button>
 						</div>
 					</div>
 				</div>
@@ -34,7 +34,7 @@
 					<div class="span12 input-prepend input-append">
 						<span class="add-on" style="font-size: 17.5px;padding: 11px 19px;">Value:</span>
 						<button class="btn btn-large btn-primary" ng-click="changeDefenderValue(-1)">-</button>
-						<input class="input-small edit-btn-large" type="number" ng-model="defenderValue" xng-change="changeDefenderValue(0)" />
+						<input class="input-small edit-btn-large" type="number" ng-model="defenderValue" ng-change="updateOdds()" />
 						<button class="btn btn-large btn-primary" ng-click="changeDefenderValue(1)">+</button>
 					</div>
 				</div>

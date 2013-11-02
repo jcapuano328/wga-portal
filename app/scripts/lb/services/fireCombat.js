@@ -30,7 +30,7 @@ ica.module('wgaPortalLbApp.services', [])
             resolve: function(odds, defincr, dice) {
             
 		    	if (defincr > 9) {
-		        	var b6i = new Base6Value(dice);
+		        	var b6i = new ica.Base6Value(dice);
 		        	dice = b6i.add(defincr - 9);
 		        }
 		        

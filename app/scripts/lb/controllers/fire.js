@@ -64,7 +64,7 @@ ica.module('wgaPortalLbApp.controllers', [])
         	calcOdds();
             resolveCombat();
         }
-        $scope.updateAttackCannister = function() {
+        $scope.updateOdds = function() {
         	$log.info('Update attacker cannister');
         	calcOdds();
             resolveCombat();
