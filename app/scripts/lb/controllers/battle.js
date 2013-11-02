@@ -4,20 +4,25 @@ ica.module('wgaPortalLbApp.controllers', [])
 	.controller('BattleCtrl', function ($routeParams, $rootScope, $scope, $log, game) {
     	$log.info('Load battle controller');
     
-    	var battlescenario = game.restore($routeParams.battleid, $routeParams.scenarioid);
-        $rootScope.current = {
-        	game: battlescenario,
-        	battle: battlescenario.battle,
-        	scenario: battlescenario.scenario,
-        	dateTime: game.formatCurrentDateTime(battlescenario.scenario, battlescenario.saved.turn),
-            phase: game.getCurrentPhase(battlescenario.saved.phase)
-		};
-        $scope.tabs = {
-            one: true,
-            two: false,
-            three: false,
-            four: false
-        };
+        function load(battleid, scenarioid) {
+	    	var battlescenario = game.restore(battleid, scenarioid);
+	        $rootScope.current = {
+	        	game: battlescenario,
+	        	battle: battlescenario.battle,
+	        	scenario: battlescenario.scenario,
+	        	dateTime: game.formatCurrentDateTime(battlescenario.scenario, battlescenario.saved.turn),
+	            phase: game.getCurrentPhase(battlescenario.saved.phase)
+			};
+	        $scope.tabs = {
+	            one: true,
+	            two: false,
+	            three: false,
+	            four: false
+	        };
+        }
+    
+    	$log.info('BattleID: ' + $routeParams.battleid + ', ScenarioID: ' + $routeParams.scenarioid);
+        load($routeParams.battleid, $routeParams.scenarioid);
         
         $scope.changeTurn = function(c) {
         	$rootScope.current.game.saved.turn += c;
@@ -39,6 +44,10 @@ ica.module('wgaPortalLbApp.controllers', [])
         $scope.$on('reset', function() {
         	$scope.changeTurn(0);
             $scope.changePhase(0);
+        });
+        
+        $scope.$on('battle', function(e, opts) {
+        	load(opts.battleid, opts.scenarioid);
         });
         
 	});

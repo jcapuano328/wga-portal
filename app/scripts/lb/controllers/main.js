@@ -1,7 +1,7 @@
 'use strict';
 
 ica.module('wgaPortalLbApp.controllers', [])
-    .controller('MainCtrl', function ($rootScope, $scope, $location, $http, $log, game) {
+    .controller('MainCtrl', function ($routeParams, $rootScope, $scope, $location, $http, $log, game) {
     	$log.info('Load main controller');
     
         $rootScope.game = null;
@@ -37,6 +37,12 @@ ica.module('wgaPortalLbApp.controllers', [])
             .success(function(data, status, headers, config) {
                 $log.log('game retrieved');
                 $rootScope.game = data;
-                $location.path('/lb/battles');
+                if ($routeParams.battleid && $routeParams.scenarioid) {
+	                //$location.path('/lb/battle/' + $routeParams.battleid + '/' + $routeParams.scenarioid);
+                    $rootScope.$broadcast('battle', {battleid: $routeParams.battleid, scenarioid: $routeParams.scenarioid});
+				}                    
+                else {
+	                $location.path('/lb/battles');
+				}                    
             });
     });
